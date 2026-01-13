@@ -37,7 +37,7 @@ const BlogPost = () => {
   const posts: BlogPostData[] = [
     {
       id: 1,
-      title: "EzyBuilds Construction Estimators Who Turn Numbers Into Confidence",
+      title: "remoteseat Construction Estimators Who Turn Numbers Into Confidence",
       excerpt:
         "In today's fast-moving construction world, success starts long before the first brick is laid. It begins with knowing the true cost of what you’re about to build.",
       image:
@@ -50,7 +50,7 @@ const BlogPost = () => {
         { type: "h2", text: "Know the Real Cost Before You Build" },
         {
           type: "p",
-          text: "Imagine knowing the exact material and labor cost for your project, no guesswork, no hidden expenses. With EzyBuilds’ construction cost estimating services, you can see every detail clearly: materials, quantities, labor hours, equipment, and overhead.",
+          text: "Imagine knowing the exact material and labor cost for your project, no guesswork, no hidden expenses. With remoteseat's construction cost estimating services, you can see every detail clearly: materials, quantities, labor hours, equipment, and overhead.",
         },
         {
           type: "p",
@@ -59,33 +59,33 @@ const BlogPost = () => {
         { type: "h2", text: "Accurate Estimates That Save Time and Money" },
         {
           type: "p",
-          text: "Accuracy is everything in construction. That’s why EzyBuilds uses advanced digital takeoff tools and professional estimator expertise to deliver results you can trust. We compare your project’s projected costs with current market rates, helping you identify cost-saving opportunities before you commit to suppliers or subcontractors.",
+          text: "Accuracy is everything in construction. That's why remoteseat uses advanced digital takeoff tools and professional estimator expertise to deliver results you can trust. We compare your project's projected costs with current market rates, helping you identify cost-saving opportunities before you commit to suppliers or subcontractors.",
         },
         {
           type: "p",
-          text: "Our clients consistently find that an EzyBuilds estimate doesn’t just guide spending, it reduces it. With precise forecasting, you can bid smarter, plan better, and avoid unexpected overruns.",
+          text: "Our clients consistently find that a remoteseat estimate doesn't just guide spending, it reduces it. With precise forecasting, you can bid smarter, plan better, and avoid unexpected overruns.",
         },
         { type: "h2", text: "Flexible, Project-Based Estimating" },
         {
           type: "p",
-          text: "Every project is unique and your estimating service should be too. EzyBuilds offers task-based and project-based estimating options, so you only pay for what you need. Whether it’s a full residential estimate, a single trade takeoff, or a specific drawing package, we tailor our services to match your project scope and budget.",
+          text: "Every project is unique and your estimating service should be too. remoteseat offers task-based and project-based estimating options, so you only pay for what you need. Whether it's a full residential estimate, a single trade takeoff, or a specific drawing package, we tailor our services to match your project scope and budget.",
         },
         {
           type: "p",
-          text: "This flexibility makes EzyBuilds ideal for contractors, architects, builders, and developers who want professional-grade estimating support without unnecessary costs or long-term commitments.",
+          text: "This flexibility makes remoteseat ideal for contractors, architects, builders, and developers who want professional-grade estimating support without unnecessary costs or long-term commitments.",
         },
         { type: "h2", text: "Transparency That Builds Trust" },
         {
           type: "p",
-          text: "We believe that construction should never involve surprises, especially financial ones. Each EzyBuilds estimate is transparent, itemized, and easy to understand. You’ll know where every dollar goes, from foundation materials to finishing details. Our construction estimating consultants act as your cost partners helping you stay informed, competitive, and profitable throughout your project’s lifecycle.",
+          text: "We believe that construction should never involve surprises, especially financial ones. Each remoteseat estimate is transparent, itemized, and easy to understand. You'll know where every dollar goes, from foundation materials to finishing details. Our construction estimating consultants act as your cost partners helping you stay informed, competitive, and profitable throughout your project's lifecycle.",
         },
       ],
     },
     {
       id: 2,
-      title: "EzyBuilds: Redefining Offshore Solutions for the Construction Industry",
+      title: "remoteseat: Redefining Offshore Solutions for the Construction Industry",
       excerpt:
-        "In today's fast-paced construction world, time and precision are critical. At EzyBuilds, we don't just provide offshore...",
+        "In today's fast-paced construction world, time and precision are critical. At remoteseat, we don't just provide offshore...",
       image:
         "https://ezybuilds.com/wp-content/uploads/2025/10/ChatGPT-Image-Oct-18-2025-03_47_03-AM-e1760741930453-1024x577.webp",
       date: "17 Oct",
@@ -95,7 +95,7 @@ const BlogPost = () => {
       content: [
         {
           type: "p",
-          text: "In today’s fast-paced construction world, time and precision are critical. At EzyBuilds, we don’t just provide offshore talent; we provide smart, reliable solutions that help construction professionals like you scale with ease, efficiency, and unmatched quality.",
+          text: "In today's fast-paced construction world, time and precision are critical. At remoteseat, we don't just provide offshore talent; we provide smart, reliable solutions that help construction professionals like you scale with ease, efficiency, and unmatched quality.",
         },
         { type: "h2", text: "Traditional Hiring Can Hold You Back" },
         {
@@ -104,14 +104,14 @@ const BlogPost = () => {
         },
         {
           type: "p",
-          text: "EzyBuilds takes this challenge head-on, providing a seamless offshore solution that empowers you to expand your workforce without the hassle.",
+          text: "remoteseat takes this challenge head-on, providing a seamless offshore solution that empowers you to expand your workforce without the hassle.",
         },
-        { type: "h2", text: "The EzyBuilds Solution: Offshore Teams, On-Point Execution" },
+        { type: "h2", text: "The remoteseat Solution: Offshore Teams, On-Point Execution" },
         {
           type: "p",
           text: "Imagine being able to scale your team instantly, no hiring delays, no training downtime, just high-quality professionals ready to integrate with your existing workflow.",
         },
-        { type: "h3", text: "Here’s what EzyBuilds offers:" },
+        { type: "h3", text: "Here's what remoteseat offers:" },
         {
           type: "ul",
           items: [
@@ -124,15 +124,15 @@ const BlogPost = () => {
           type: "p",
           text: "We don’t just provide staff, we give you a strategic extension of your existing team, ready to tackle your toughest projects.",
         },
-        { type: "h2", text: "Why EzyBuilds? The Competitive Advantage" },
+        { type: "h2", text: "Why remoteseat? The Competitive Advantage" },
         {
           type: "p",
-          text: "At EzyBuilds, we combine construction industry expertise with business intelligence. We’re not just a resource provider; we’re your trusted offshore partner, helping you achieve greater project capacity, faster delivery times, and significant cost savings.",
+          text: "At remoteseat, we combine construction industry expertise with business intelligence. We're not just a resource provider; we're your trusted offshore partner, helping you achieve greater project capacity, faster delivery times, and significant cost savings.",
         },
         {
           type: "img",
           src: "https://ezybuilds.com/wp-content/uploads/2025/10/ChatGPT-Image-Oct-18-2025-03_53_13-AM-e1760741905704.webp",
-          alt: "EzyBuilds offshore solutions",
+          alt: "remoteseat offshore solutions",
         },
         { type: "h3", text: "Why Choose Us:" },
         {
@@ -146,12 +146,12 @@ const BlogPost = () => {
         },
         {
           type: "p",
-          text: "EzyBuilds is more than just outsourcing; it’s about building a better, more efficient construction process.",
+          text: "remoteseat is more than just outsourcing; it's about building a better, more efficient construction process.",
         },
         { type: "h2", text: "Our Areas of Expertise: Specialized Support for Every Project" },
         {
           type: "p",
-          text: "EzyBuilds serves a wide range of construction professionals, including contractors, architects, and estimators. Our team is skilled in the following areas:",
+          text: "remoteseat serves a wide range of construction professionals, including contractors, architects, and estimators. Our team is skilled in the following areas:",
         },
         {
           type: "ul",
@@ -171,10 +171,10 @@ const BlogPost = () => {
           type: "p",
           text: "Every professional we place is equipped with the skills and tools you need to get work done fast and accurately.",
         },
-        { type: "h2", text: "How EzyBuilds Works: A Seamless Process for Growth" },
+        { type: "h2", text: "How remoteseat Works: A Seamless Process for Growth" },
         {
           type: "p",
-          text: "At EzyBuilds, we’ve streamlined the process to make it as easy as possible for you to integrate offshore talent into your team:",
+          text: "At remoteseat, we've streamlined the process to make it as easy as possible for you to integrate offshore talent into your team:",
         },
         {
           type: "ol",
@@ -189,10 +189,10 @@ const BlogPost = () => {
           type: "p",
           text: "From start to finish, we handle it all, giving you the flexibility to focus on what matters most.",
         },
-        { type: "h2", text: "The Impact: What You Gain with EzyBuilds" },
+        { type: "h2", text: "The Impact: What You Gain with remoteseat" },
         {
           type: "p",
-          text: "When you partner with EzyBuilds, you gain more than just skilled professionals; you gain the power to transform your business. Here’s how:",
+          text: "When you partner with remoteseat, you gain more than just skilled professionals; you gain the power to transform your business. Here's how:",
         },
         {
           type: "ul",
@@ -210,7 +210,7 @@ const BlogPost = () => {
         { type: "h3", text: "The Future of Construction: Global Teams, Local Results" },
         {
           type: "p",
-          text: "EzyBuilds is part of a larger movement in the construction industry: global teams for local results. With cloud-based tools and seamless communication, we believe the future of construction is borderless. That’s why we bring you highly skilled offshore professionals who work like they’re right down the street.",
+          text: "remoteseat is part of a larger movement in the construction industry: global teams for local results. With cloud-based tools and seamless communication, we believe the future of construction is borderless. That's why we bring you highly skilled offshore professionals who work like they're right down the street.",
         },
         {
           type: "p",
@@ -220,7 +220,7 @@ const BlogPost = () => {
     },
     {
       id: 3,
-      title: "How EzyBuilds Streamlines Construction Outsourcing for Maximum Efficiency",
+      title: "How remoteseat Streamlines Construction Outsourcing for Maximum Efficiency",
       excerpt:
         "Outsource Your Construction Staffing to Stay Ahead of the Competition Outsourcing is no longer a trend; it's...",
       image:
@@ -233,17 +233,17 @@ const BlogPost = () => {
         { type: "h2", text: "Outsource Your Construction Staffing to Stay Ahead of the Competition" },
         {
           type: "p",
-          text: "Outsourcing is no longer a trend; it’s a necessity. As the construction industry faces increased project complexity, tight budgets, and tight deadlines, companies are turning to offshore staffing to stay competitive. EzyBuilds empowers construction firms to outsource their staffing needs, ensuring you never miss a beat when it comes to meeting client demands.",
+          text: "Outsourcing is no longer a trend; it's a necessity. As the construction industry faces increased project complexity, tight budgets, and tight deadlines, companies are turning to offshore staffing to stay competitive. remoteseat empowers construction firms to outsource their staffing needs, ensuring you never miss a beat when it comes to meeting client demands.",
         },
         {
           type: "p",
-          text: "When you choose EzyBuilds for your construction staffing, you don’t just get offshore help; you get a strategic extension of your team, fully equipped to deliver exceptional results.",
+          text: "When you choose remoteseat for your construction staffing, you don't just get offshore help; you get a strategic extension of your team, fully equipped to deliver exceptional results.",
         },
-        { type: "h3", text: "Why Outsource Construction Staffing to EzyBuilds?" },
+        { type: "h3", text: "Why Outsource Construction Staffing to remoteseat?" },
         {
           type: "img",
           src: "https://ezybuilds.com/wp-content/uploads/2025/10/ChatGPT-Image-Oct-18-2025-03_31_13-AM-e1760742200176.webp",
-          alt: "Why outsource construction staffing to EzyBuilds",
+          alt: "Why outsource construction staffing to remoteseat",
         },
         {
           type: "p",
@@ -254,28 +254,28 @@ const BlogPost = () => {
           items: [
             "Cost Savings: Offshore staffing provides a more affordable alternative to local hires, enabling your firm to stay competitive without incurring significant expenses.",
             "Increased Flexibility: Outsourcing allows you to scale your workforce based on project needs, whether you’re facing a busy season or need additional support for one-off projects.",
-            "Expert Construction Professionals: At EzyBuilds, we provide highly skilled offshore workers trained in the latest industry tools and techniques, including AutoCAD, Revit, and PlanSwift. No matter the project type, we have the expertise you need.",
+            "Expert Construction Professionals: At remoteseat, we provide highly skilled offshore workers trained in the latest industry tools and techniques, including AutoCAD, Revit, and PlanSwift. No matter the project type, we have the expertise you need.",
             "Faster Turnarounds: Our offshore teams can get started quickly, reducing lead times and enabling you to complete projects ahead of schedule.",
           ],
         },
         {
           type: "p",
-          text: "With EzyBuilds, you get the best of both worlds: top-notch professionals who bring global expertise to your local projects.",
+          text: "With remoteseat, you get the best of both worlds: top-notch professionals who bring global expertise to your local projects.",
         },
-        { type: "h3", text: "How Outsourcing to EzyBuilds Streamlines Your Operations" },
+        { type: "h3", text: "How Outsourcing to remoteseat Streamlines Your Operations" },
         {
           type: "p",
-          text: "Construction projects come with unique challenges delays, budget constraints, and talent shortages. Outsourcing to EzyBuilds offers solutions that alleviate these problems:",
+          text: "Construction projects come with unique challenges delays, budget constraints, and talent shortages. Outsourcing to remoteseat offers solutions that alleviate these problems:",
         },
         {
           type: "ul",
           items: [
             "Zero Staffing Gaps: We provide offshore talent to cover a range of roles, ensuring your team stays fully staffed at all times.",
-            "Reduced Overhead: Instead of hiring locally, training, and managing payroll, you can rely on EzyBuilds to handle all the logistics while you focus on the bigger picture.",
+            "Reduced Overhead: Instead of hiring locally, training, and managing payroll, you can rely on remoteseat to handle all the logistics while you focus on the bigger picture.",
             "Enhanced Productivity: With skilled professionals on board, you’ll notice quicker turnaround times and better overall project quality.",
           ],
         },
-        { type: "h3", text: "The EzyBuilds Outsourcing Workflow: From Consultation to Completion" },
+        { type: "h3", text: "The remoteseat Outsourcing Workflow: From Consultation to Completion" },
         {
           type: "ol",
           items: [
@@ -608,12 +608,12 @@ const BlogPost = () => {
               <div className="flex flex-col items-start gap-4 sm:flex-row sm:items-center">
                 <img
                   src="https://secure.gravatar.com/avatar/4ce0791f07dee740c9cd289eebcaac7a604bd7efea7b32214fcb4c4603e0ac10?s=300&d=mm&r=g"
-                  alt="Picture of EzyBuilds"
+                  alt="Picture of remoteseat"
                   className="h-16 w-16 rounded-full"
                   loading="lazy"
                 />
                 <div>
-                  <div className="text-[18px] font-bold text-gray-900">EzyBuilds</div>
+                  <div className="text-[18px] font-bold text-gray-900">remoteseat</div>
                   <div className="mt-1 text-[14px] text-gray-600">
                     We’re a leading pre-construction service provider, offering high-quality, accurate services and dedicated remote resources to the AEC industry.
                   </div>

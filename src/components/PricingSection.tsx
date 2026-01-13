@@ -41,7 +41,7 @@ const PricingSection = () => {
     const style = document.createElement('style');
     style.textContent = `
       .pricing-section {
-        background-color: #373737;
+        background-color: #171717;
         min-height: 600px;
         padding: 80px 100px;
       }

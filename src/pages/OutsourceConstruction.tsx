@@ -1,214 +1,262 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { ArrowRight, Phone, Calendar, ChevronDown, ChevronUp, Clock, Users, CheckCircle, Building2, Wrench, FileText } from "lucide-react";
+import { ArrowRight, Phone, Calendar, ChevronDown, ChevronUp, Clock, Users, CheckCircle, Building2, Home, Wrench, FileText, Calculator, Layers, Box, Handshake, Settings, HomeIcon } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 const OutsourceConstruction = () => {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
-  const deadlinePoints = [
-    {
-      icon: Clock,
-      text: "Construction deadlines don't wait for you to find the right talent"
-    },
-    {
-      icon: Users,
-      text: "Hiring locally takes weeks, sometimes months, and costs a fortune"
-    },
-    {
-      icon: CheckCircle,
-      text: "Get instant access to pre-vetted AEC professionals ready to start immediately"
-    }
+  const roles = [
+    { title: "Residential Architect", icon: Home },
+    { title: "Construction Designer", icon: Building2 },
+    { title: "Interior Designer", icon: HomeIcon },
+    { title: "Civil Engineer", icon: Wrench },
+    { title: "Quantity Surveyor", icon: Calculator },
+    { title: "Cost Estimator", icon: Calculator },
+    { title: "AutoCAD/CAD Operators", icon: Layers },
+    { title: "Project Accountant", icon: FileText },
+    { title: "BIM Specialist", icon: Box },
+    { title: "Draftsperson", icon: FileText },
+    { title: "Project Manager", icon: Users },
+    { title: "3D Visualizer", icon: Layers }
   ];
 
   const softwareTools = [
-    "AutoCAD", "Revit", "SketchUp", "3ds Max", "V-Ray", "Lumion", 
-    "ArchiCAD", "Blender", "Bluebeam", "PlanSwift", "On-Screen Takeoff",
-    "SolidWorks", "MicroStation", "Vectorworks"
-  ];
-
-  const roles = [
-    { title: "Residential Architect", icon: Building2 },
-    { title: "Civil Engineer", icon: Wrench },
-    { title: "Project Manager", icon: Users },
-    { title: "BIM Specialist", icon: FileText },
-    { title: "Structural Engineer", icon: Building2 },
-    { title: "MEP Engineer", icon: Wrench },
-    { title: "Cost Estimator", icon: FileText },
-    { title: "CAD Drafter", icon: FileText },
-    { title: "3D Modeler", icon: Building2 }
+    { name: "Enscape", logo: "Enscape" },
+    { name: "SolidWorks", logo: "SolidWorks" },
+    { name: "Revit", logo: "Revit" },
+    { name: "Rhinoceros", logo: "Rhinoceros" },
+    { name: "V-Ray", logo: "V-Ray" },
+    { name: "ArchiCAD", logo: "ArchiCAD" },
+    { name: "SketchUp", logo: "SketchUp" },
+    { name: "Lumion", logo: "Lumion" },
+    { name: "Chief Architect", logo: "Chief Architect" },
+    { name: "Blender", logo: "Blender" },
+    { name: "3ds Max", logo: "3ds Max" },
+    { name: "DraftSight", logo: "DraftSight" }
   ];
 
   const clients = [
-    "General Contractors",
-    "Architecture Firms",
-    "Engineering Companies",
-    "Construction Managers",
-    "Real Estate Developers",
-    "Design-Build Firms",
-    "Facility Management",
-    "Infrastructure Companies"
+    { title: "Architecture Firms", icon: Building2 },
+    { title: "Engineering Companies", icon: Wrench },
+    { title: "Construction Companies", icon: Building2 },
+    { title: "Project Managers", icon: Users },
+    { title: "General Contractors", icon: Building2 },
+    { title: "Sub-contractors", icon: Wrench },
+    { title: "Real Estate Developers", icon: Home },
+    { title: "Surveying Companies", icon: FileText }
   ];
 
   const testimonials = [
     {
-      quote: "EZYBUILDS' team is hardworking and dependable. They always deliver great work, even when we're up against tight deadlines. Highly recommend them!",
-      name: "Robert H.",
-      role: "Project Manager"
+      quote: "We saved 40% on drafting costs during peak season and hit every deadline.",
+      name: "Cori T.",
+      role: "General Contractor"
     },
     {
-      quote: "EZYBUILDS never misses a deadline. They're quick, efficient, and always keep us updated on progress. A pleasure to work with!",
-      name: "James L.",
+      quote: "Quality and speed are unmatched. Our BIM models were delivered in 3 days.",
+      name: "Sarah P.",
       role: "Principal Architect"
     }
   ];
 
   const faqs = [
     {
-      question: "What construction services can we outsource?",
-      answer: "You can outsource a wide range of construction services including architectural design, structural engineering, MEP design, BIM modeling, CAD drafting, cost estimation, project management, 3D rendering, and construction documentation. We handle projects from initial design through construction documentation."
+      question: "Can I use this for just one project?",
+      answer: "Yes, absolutely! Our flexible model allows you to use our services for a single project without any long-term commitments. You can scale up or down as needed, and there are no minimum contract terms."
     },
     {
-      question: "How quickly can we get started?",
-      answer: "We can match you with pre-vetted professionals within 24-48 hours. Once you approve the candidates, they can start working immediately. No lengthy hiring process or onboarding delays."
+      question: "Do your experts understand U.S. building codes?",
+      answer: "Yes, all our experts are trained in U.S. building codes including IBC, IRC, ADA requirements, and local building codes. They understand U.S. drafting standards, layer conventions, dimensioning practices, and architectural/engineering drawing requirements."
     },
     {
-      question: "What's the cost difference compared to hiring locally?",
-      answer: "You can save up to 70% on costs compared to hiring local professionals. Our offshore talent works at competitive hourly rates ($13-15/hour) versus local rates ($40-70/hour), with no benefits, taxes, or recruitment fees."
+      question: "What software do you support?",
+      answer: "We support all major industry-standard software including AutoCAD, Revit, SketchUp, SolidWorks, Enscape, V-Ray, ArchiCAD, Lumion, Rhinoceros, Chief Architect, Blender, 3ds Max, DraftSight, and many others. Our professionals can adapt to your preferred software and standards."
     },
     {
-      question: "Are the professionals familiar with US construction standards?",
-      answer: "Yes, all our professionals are trained in US construction standards, building codes (IBC, IRC), and imperial measurements. They understand US project requirements and work in your time zone for seamless collaboration."
-    },
-    {
-      question: "How do we communicate with offshore teams?",
-      answer: "We use your preferred communication tools (Slack, Teams, email, video calls) for daily updates, progress tracking, and meetings. Regular check-ins ensure transparency and alignment with your project goals."
-    },
-    {
-      question: "What about quality assurance?",
-      answer: "We have a rigorous quality assurance process including peer reviews, technical checks, code compliance verification, and client feedback integration. All deliverables go through multiple review stages before final delivery."
-    },
-    {
-      question: "Can we scale the team up or down as needed?",
-      answer: "Absolutely. Our flexible model allows you to scale your team based on project needs. Add more professionals during peak periods and reduce when workload decreases, all without long-term commitments."
-    },
-    {
-      question: "What file formats and software do you support?",
-      answer: "We support all industry-standard software including AutoCAD, Revit, SketchUp, 3ds Max, Bluebeam, and more. We can work with your existing templates, standards, and file formats to ensure seamless integration."
+      question: "What if I'm not satisfied with the work?",
+      answer: "We have a rigorous quality assurance process and stand behind our work. If you're not satisfied, we'll work with you to make revisions and corrections until the work meets your expectations. Your satisfaction is our priority."
     }
   ];
 
   return (
-    <div className="min-h-screen bg-[#f3f2f0]">
+    <div className="min-h-screen bg-white">
       <Header />
       
       {/* Hero Section */}
-      <section className="relative pt-28 pb-20 bg-white">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+      <section 
+        className="relative py-16 lg:py-28 overflow-hidden"
+        style={{
+          backgroundImage: 'url(https://ezybuilds.com/wp-content/uploads/2025/03/hero-blueprint.webp)',
+          backgroundPosition: 'right center',
+          backgroundRepeat: 'no-repeat',
+          backgroundSize: 'contain'
+        }}
+      >
+        <div className="absolute inset-0 bg-[#dbd4ce] opacity-30"></div>
+        <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Left Content */}
             <div className="space-y-6">
               <h1 
                 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight"
-                style={{ fontFamily: "trap, Poppins, system-ui, sans-serif", color: "#212121" }}
+                style={{ fontFamily: "trap, Poppins, system-ui, sans-serif", color: "#171717" }}
               >
-                Need Extra Hands for Your <span style={{ color: "#C95B4A" }}>Construction Project?</span>
+                Need Extra Hands for Your <span className="text-[#f2572b]">Construction Project?</span>
               </h1>
               <p className="text-lg text-[#6b6b6b] leading-relaxed">
-                Get instant access to pre-vetted AEC professionals. Scale your team instantly, save up to 70% on costs, and meet tight deadlines without the hassle of local hiring.
+                Trusted by general contractors, architects, and developers to meet urgent deadlines without hiring full-time.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Link
-                  to="/contact-us"
-                  className="inline-flex items-center justify-center gap-2 rounded-full bg-[#C95B4A] px-8 py-4 text-white font-medium hover:bg-[#b34e3f] transition-colors"
-                  style={{ fontFamily: "Poppins, system-ui, sans-serif", fontSize: "14px" }}
-                >
-                  Book a Free 15-Minute Call
-                  <ArrowRight className="w-4 h-4" />
-                </Link>
-                <a
-                  href="tel:+15108617074"
-                  className="inline-flex items-center justify-center gap-2 rounded-full bg-white px-8 py-4 text-[#212121] font-medium hover:bg-gray-50 transition-colors border-2 border-[#212121]"
-                  style={{ fontFamily: "Poppins, system-ui, sans-serif", fontSize: "14px" }}
-                >
-                  <Phone className="w-4 h-4" />
-                  Call Us
-                </a>
+              <div className="space-y-3">
+                <div className="flex items-center gap-3">
+                  <Calendar className="w-5 h-5 text-[#f2572b] flex-shrink-0" />
+                  <span className="text-[#f2572b] font-medium">Book a Free 15-Minute Call</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <FileText className="w-5 h-5 text-[#6b6b6b] flex-shrink-0" />
+                  <span className="text-[#6b6b6b]">No long-term contracts. Just reliable experts when you need them.</span>
+                </div>
               </div>
             </div>
-            <div className="relative flex justify-center lg:justify-end">
-              <div className="w-full max-w-md">
-                <Calendar className="w-full h-auto text-[#C95B4A] opacity-20" />
+
+            {/* Right Content - Calendar Widget */}
+            <div className="hidden lg:block">
+              <div className="bg-white rounded-2xl overflow-hidden shadow-2xl border-2 border-[#f2572b]/20 min-w-[320px] h-[500px]">
+                <iframe
+                  src="https://calendly.com/ezy-teams/ezybuilds-project-discussion-meeting-clone?embed_domain=ezybuilds.com&embed_type=Inline&hide_event_type_details=1&hide_gdpr_banner=1"
+                  width="100%"
+                  height="100%"
+                  title="Select a Date & Time - Calendly"
+                  className="rounded-[12px] border-0"
+                />
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Construction Deadlines Section */}
-      <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+      {/* Construction Deadlines Don't Wait Section */}
+      <section className="py-16 lg:py-20 relative overflow-hidden bg-white">
+        {/* Background Image with low opacity */}
+        <div 
+          className="absolute inset-0 opacity-[0.03]"
+          style={{
+            backgroundImage: 'url(https://ezybuilds.com/wp-content/uploads/2025/03/hero-blueprint.webp)',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat',
+            backgroundSize: 'cover'
+          }}
+        ></div>
+        <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+          <h2 
+            className="text-3xl lg:text-4xl font-bold mb-6"
+            style={{ fontFamily: "trap, Poppins, system-ui, sans-serif", color: "#171717" }}
+          >
+            Construction Deadlines Don't Wait!
+          </h2>
+          <p className="text-lg text-[#6b6b6b] leading-relaxed mb-12 max-w-4xl">
+            Whether you're rushing submittals, need site-ready models, or handling last-minute change orders - bottlenecks in documentation, design, or quantity takeoffs slow everything down.
+          </p>
           <div className="grid md:grid-cols-3 gap-8">
-            {deadlinePoints.map((point, index) => {
-              const Icon = point.icon;
-              return (
-                <div key={index} className="flex items-start gap-4">
-                  <div className="flex-shrink-0 w-12 h-12 bg-[#C95B4A] rounded-full flex items-center justify-center">
-                    <Icon className="w-6 h-6 text-white" />
-                  </div>
-                  <p className="text-lg text-[#212121] font-medium leading-relaxed pt-2">
-                    {point.text}
-                  </p>
-                </div>
-              );
-            })}
+            <div className="flex items-start gap-4">
+              <div className="w-12 h-12 bg-[#f2572b] rounded-full flex items-center justify-center flex-shrink-0">
+                <Building2 className="w-6 h-6 text-white" />
+              </div>
+              <p className="text-lg text-[#171717] font-medium leading-relaxed pt-2">
+                Tap into a vetted pool of construction support professionals - fast.
+              </p>
+            </div>
+            <div className="flex items-start gap-4">
+              <div className="w-12 h-12 bg-[#f2572b] rounded-full flex items-center justify-center flex-shrink-0">
+                <Users className="w-6 h-6 text-white" />
+              </div>
+              <p className="text-lg text-[#171717] font-medium leading-relaxed pt-2">
+                We're Your Remote Extension Team.
+              </p>
+            </div>
+            <div className="flex items-start gap-4">
+              <div className="w-12 h-12 bg-[#f2572b] rounded-full flex items-center justify-center flex-shrink-0">
+                <Clock className="w-6 h-6 text-white" />
+              </div>
+              <p className="text-lg text-[#171717] font-medium leading-relaxed pt-2">
+                Save time and money on every project.
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Software & Tools Section */}
-      <section className="py-16 bg-[#C95B4A] overflow-hidden">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-              Software & Tools We Expertly Utilize
-            </h2>
-          </div>
-          <div className="flex flex-wrap justify-center gap-4 md:gap-6">
-            {softwareTools.map((tool, index) => (
-              <div 
-                key={index} 
-                className="bg-white/10 backdrop-blur-sm px-4 md:px-6 py-2 md:py-3 rounded-lg border border-white/20 hover:bg-white/20 transition-colors"
+      <section 
+        className="bg-[#f2572b] py-16 lg:py-20 relative overflow-hidden"
+        style={{
+          backgroundImage: 'url(https://ezybuilds.com/wp-content/uploads/2025/03/plan-2.webp)',
+          backgroundPosition: 'bottom left',
+          backgroundRepeat: 'no-repeat',
+          backgroundSize: 'contain'
+        }}
+      >
+        <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+          <div className="grid lg:grid-cols-2 gap-12 items-start">
+            <div>
+              <h2 
+                className="text-3xl lg:text-4xl font-semibold text-white mb-4"
+                style={{ fontFamily: "trap, Poppins, system-ui, sans-serif" }}
               >
-                <span className="text-white font-medium text-sm md:text-base">{tool}</span>
-              </div>
-            ))}
+                Software & Tools We Expertly Utilize
+              </h2>
+            </div>
+            <div className="grid grid-cols-3 md:grid-cols-4 gap-4">
+              {softwareTools.map((tool, index) => (
+                <div key={index} className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-4 text-center hover:bg-white/20 transition-colors">
+                  <div className="text-white font-medium text-sm">{tool.name}</div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
 
       {/* Get What You Need Section */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4" style={{ color: "#212121" }}>
-              Get what you need. <span style={{ color: "#C95B4A" }}>Only when you need it.</span>
-            </h2>
-            <p className="text-lg text-[#6b6b6b] max-w-3xl mx-auto">
-              Access a wide range of AEC professionals on-demand. Scale your team instantly without long-term commitments.
-            </p>
+      <section className="py-16 lg:py-20 relative overflow-hidden bg-white">
+        {/* Background Image with low opacity */}
+        <div 
+          className="absolute inset-0 opacity-[0.03]"
+          style={{
+            backgroundImage: 'url(https://ezybuilds.com/wp-content/uploads/2025/03/hero-blueprint.webp)',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat',
+            backgroundSize: 'cover'
+          }}
+        ></div>
+        <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+          <h2 
+            className="text-3xl lg:text-4xl font-bold mb-12 text-center"
+            style={{ fontFamily: "trap, Poppins, system-ui, sans-serif", color: "#171717" }}
+          >
+            Get what you need. <span className="text-[#f2572b]">Only when you need it.</span>
+          </h2>
+          
+          {/* Large Building Image */}
+          <div className="mb-12">
+            <img 
+              src="https://ezybuilds.com/wp-content/uploads/2025/03/building-1.webp"
+              alt="Modern building rendering"
+              className="w-full h-auto rounded-2xl shadow-xl"
+            />
           </div>
-          <div className="grid md:grid-cols-3 lg:grid-cols-3 gap-6">
+
+          {/* Roles Grid */}
+          <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-6">
             {roles.map((role, index) => {
               const Icon = role.icon;
               return (
-                <div key={index} className="bg-white border-2 border-gray-200 rounded-xl p-6 hover:border-[#C95B4A] transition-colors">
-                  <div className="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center mb-4">
-                    <Icon className="w-6 h-6 text-[#212121]" />
+                <div key={index} className="bg-white rounded-xl p-6 shadow-md border border-gray-100 hover:shadow-lg transition-shadow">
+                  <div className="w-12 h-12 bg-[#f2572b]/10 rounded-lg flex items-center justify-center mb-4">
+                    <Icon className="w-6 h-6 text-[#f2572b]" />
                   </div>
-                  <h3 className="text-lg font-semibold" style={{ color: "#212121" }}>
-                    {role.title}
-                  </h3>
+                  <h3 className="text-lg font-semibold text-[#171717]">{role.title}</h3>
                 </div>
               );
             })}
@@ -216,87 +264,122 @@ const OutsourceConstruction = () => {
         </div>
       </section>
 
-      {/* Simple 3-Step Process */}
-      <section className="py-20 bg-white">
+      {/* Simple 3-Step Process Section */}
+      <section className="bg-white py-16 lg:py-20">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4" style={{ color: "#212121" }}>
-              Simple <span style={{ color: "#C95B4A" }}>3-Step Process</span>
-            </h2>
-          </div>
-          <div className="grid md:grid-cols-3 gap-8 mb-12">
-            {[
-              { step: "1", title: "Tell Us Your Needs", desc: "Share your project requirements and the skills you need." },
-              { step: "2", title: "Get Matched", desc: "We match you with pre-vetted professionals in 24-48 hours." },
-              { step: "3", title: "Start Working", desc: "Begin immediately with full support and quality assurance." }
-            ].map((item, index) => (
-              <div key={index} className="text-center">
-                <div className="w-16 h-16 bg-[#C95B4A] rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-white font-bold text-xl">{item.step}</span>
-                </div>
-                <h3 className="text-xl font-bold mb-2" style={{ color: "#212121" }}>{item.title}</h3>
-                <p className="text-[#6b6b6b]">{item.desc}</p>
-              </div>
-            ))}
-          </div>
-          <div className="text-center">
-            <Link
-              to="/contact-us"
-              className="inline-flex items-center justify-center gap-2 rounded-full bg-[#C95B4A] px-8 py-4 text-white font-medium hover:bg-[#b34e3f] transition-colors"
-              style={{ fontFamily: "Poppins, system-ui, sans-serif", fontSize: "14px" }}
-            >
-              Start now
-              <ArrowRight className="w-4 h-4" />
-            </Link>
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Left Content */}
+            <div>
+              <h2 
+                className="text-3xl lg:text-4xl font-bold mb-6"
+                style={{ fontFamily: "trap, Poppins, system-ui, sans-serif", color: "#171717" }}
+              >
+                Simple <span className="text-[#f2572b]">3-Step Process</span>
+              </h2>
+              <p className="text-lg text-[#6b6b6b] leading-relaxed mb-8">
+                Submit Your Scope to Get Started.
+              </p>
+              <Link
+                to="/contact-us"
+                className="inline-flex items-center justify-center gap-2 rounded-full bg-[#f2572b] px-8 py-4 text-white font-medium hover:bg-[#e04a1f] transition-colors"
+              >
+                Start Now
+                <ArrowRight className="w-4 h-4" />
+              </Link>
+            </div>
+
+            {/* Right Content - Steps */}
+            <div className="space-y-6">
+              {[
+                { step: "1", title: "Tell Us Your Scope", desc: "Share your project requirements and the skills you need.", icon: FileText },
+                { step: "2", title: "Get Matched with Experts", desc: "We match you with pre-vetted professionals in 24-48 hours.", icon: Handshake },
+                { step: "3", title: "Kick Off & Collaborate", desc: "Begin immediately with full support and quality assurance.", icon: Settings }
+              ].map((item, index) => {
+                const Icon = item.icon;
+                return (
+                  <div key={index} className="flex items-start gap-4">
+                    <div className="w-12 h-12 bg-[#f2572b] rounded-full flex items-center justify-center flex-shrink-0">
+                      <span className="text-white font-bold text-lg">{item.step}</span>
+                    </div>
+                    <div className="flex-1">
+                      <div className="flex items-center gap-3 mb-2">
+                        <Icon className="w-5 h-5 text-[#f2572b]" />
+                        <h3 className="text-lg font-semibold text-[#171717]">{item.title}</h3>
+                      </div>
+                      <p className="text-[#6b6b6b] text-sm leading-relaxed">{item.desc}</p>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
           </div>
         </div>
       </section>
 
       {/* Our Clients Section */}
-      <section className="py-16 bg-[#C95B4A]">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-              Our Clients
-            </h2>
-            <p className="text-white/90 text-lg">
-              Trusted by leading companies across the AEC industry
-            </p>
-          </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-6">
-            {clients.map((client, index) => (
-              <div 
-                key={index} 
-                className="bg-white/10 backdrop-blur-sm rounded-lg p-6 text-center border border-white/20 hover:bg-white/20 transition-colors"
+      <section 
+        className="bg-[#f2572b] py-16 lg:py-20 relative overflow-hidden"
+        style={{
+          backgroundImage: 'url(https://ezybuilds.com/wp-content/uploads/2025/03/plan-2.webp)',
+          backgroundPosition: 'bottom left',
+          backgroundRepeat: 'no-repeat',
+          backgroundSize: 'contain'
+        }}
+      >
+        <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+          <div className="grid lg:grid-cols-2 gap-12 items-start">
+            <div>
+              <h2 
+                className="text-3xl lg:text-4xl font-semibold text-white mb-4"
+                style={{ fontFamily: "trap, Poppins, system-ui, sans-serif" }}
               >
-                <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-3">
-                  <Building2 className="w-6 h-6 text-white" />
-                </div>
-                <span className="text-white font-medium text-sm">{client}</span>
-              </div>
-            ))}
+                Our Clients
+              </h2>
+              <p className="text-white/90 text-base lg:text-lg leading-relaxed">
+                Our primary customers are from the AEC industry and include:
+              </p>
+            </div>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+              {clients.map((client, index) => {
+                const Icon = client.icon;
+                return (
+                  <div key={index} className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 text-center hover:bg-white/20 transition-colors">
+                    <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-3">
+                      <Icon className="w-6 h-6 text-white" />
+                    </div>
+                    <h3 className="text-white font-medium text-sm">{client.title}</h3>
+                  </div>
+                );
+              })}
+            </div>
           </div>
         </div>
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-20 bg-[#2a2a2a]">
+      <section className="bg-[#171717] py-16 lg:py-20">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
-              WHAT OUR <span style={{ color: "#C95B4A" }}>CLIENTS</span> SAY
-            </h2>
-          </div>
+          <h2 
+            className="text-3xl lg:text-4xl font-bold text-white mb-12 text-center"
+            style={{ fontFamily: "trap, Poppins, system-ui, sans-serif" }}
+          >
+            WHAT OUR CLIENTS SAY
+          </h2>
           <div className="grid md:grid-cols-2 gap-8">
             {testimonials.map((testimonial, index) => (
               <div key={index} className="bg-white rounded-xl p-8 shadow-lg">
-                <div className="text-[#2a2a2a] text-6xl leading-none mb-4 font-bold opacity-20">"</div>
-                <p className="text-[#212121] text-lg mb-6 leading-relaxed italic">
+                <div className="text-[#171717] text-6xl leading-none mb-4 font-bold opacity-20">"</div>
+                <p className="text-[#171717] text-lg mb-6 leading-relaxed">
                   {testimonial.quote}
                 </p>
-                <div>
-                  <div className="font-bold text-[#212121]">{testimonial.name}</div>
-                  <div className="text-[#C95B4A] text-sm">{testimonial.role}</div>
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center">
+                    <span className="text-[#171717] font-semibold text-sm">{testimonial.name.charAt(0)}</span>
+                  </div>
+                  <div>
+                    <div className="font-semibold text-[#171717]">{testimonial.name}</div>
+                    <div className="text-[#f2572b] text-sm">{testimonial.role}</div>
+                  </div>
                 </div>
               </div>
             ))}
@@ -305,66 +388,192 @@ const OutsourceConstruction = () => {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4" style={{ color: "#212121" }}>
-              Frequently Asked <span style={{ color: "#C95B4A" }}>Questions</span>
-            </h2>
-          </div>
-          <div className="space-y-4">
-            {faqs.map((faq, index) => (
-              <div key={index} className="bg-white rounded-lg border-2 border-gray-200 overflow-hidden hover:border-[#C95B4A] transition-colors">
-                <button
-                  onClick={() => setOpenFaq(openFaq === index ? null : index)}
-                  className="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-colors"
-                >
-                  <h3 className="text-lg font-medium pr-4" style={{ color: "#212121" }}>
-                    {faq.question}
-                  </h3>
-                  {openFaq === index ? (
-                    <ChevronUp className="w-5 h-5 text-[#C95B4A] flex-shrink-0" />
-                  ) : (
-                    <ChevronDown className="w-5 h-5 text-gray-400 flex-shrink-0" />
-                  )}
-                </button>
-                {openFaq === index && (
-                  <div className="px-6 pb-4">
-                    <p className="text-[#6b6b6b] leading-relaxed">{faq.answer}</p>
-                  </div>
-                )}
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="py-20 bg-[#212121]">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
-            Ready to Scale Your Construction Team?
+      <section className="bg-white py-16 lg:py-20">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <h2 
+            className="text-3xl lg:text-4xl font-bold mb-12 text-center"
+            style={{ 
+              fontFamily: "trap, Poppins, system-ui, sans-serif",
+              color: "#171717" 
+            }}
+          >
+            Frequently Asked Questions
           </h2>
-          <p className="text-lg text-gray-300 mb-8 max-w-2xl mx-auto">
-            Get instant access to pre-vetted AEC professionals. Save up to 70% on costs and meet your deadlines.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              to="/contact-us"
-              className="inline-flex items-center justify-center gap-2 rounded-full bg-[#C95B4A] px-8 py-4 text-white font-medium hover:bg-[#b34e3f] transition-colors"
-              style={{ fontFamily: "Poppins, system-ui, sans-serif", fontSize: "14px" }}
-            >
-              Contact Us
-              <ArrowRight className="w-4 h-4" />
-            </Link>
-            <a
-              href="tel:+15108617074"
-              className="inline-flex items-center justify-center gap-2 rounded-full bg-[#2a2a2a] px-8 py-4 text-white font-medium hover:bg-[#373737] transition-colors border border-gray-600"
-              style={{ fontFamily: "Poppins, system-ui, sans-serif", fontSize: "14px" }}
-            >
-              <Phone className="w-4 h-4" />
-              Call Now
-            </a>
+
+          <div className="grid lg:grid-cols-2 gap-12">
+            {/* Left Column - FAQ Accordion */}
+            <div className="space-y-4">
+              {faqs.map((faq, index) => (
+                <div key={index} className="bg-white rounded-xl border-2 border-gray-200 hover:border-[#f2572b] overflow-hidden shadow-md hover:shadow-lg transition-all duration-300">
+                  <button
+                    onClick={() => setOpenFaq(openFaq === index ? null : index)}
+                    className="w-full px-6 py-5 text-left flex justify-between items-center hover:bg-gray-50 transition-colors"
+                  >
+                    <h3 
+                      className="text-lg font-semibold pr-4"
+                      style={{ 
+                        fontFamily: "trap, Poppins, system-ui, sans-serif",
+                        color: "#171717"
+                      }}
+                    >
+                      {faq.question}
+                    </h3>
+                    <div className="flex-shrink-0">
+                      {openFaq === index ? (
+                        <ChevronUp className="w-6 h-6 text-[#f2572b]" />
+                      ) : (
+                        <ChevronDown className="w-6 h-6 text-gray-400" />
+                      )}
+                    </div>
+                  </button>
+                  
+                  {openFaq === index && (
+                    <div className="px-6 pb-5 border-t border-gray-200">
+                      <p 
+                        className="leading-relaxed pt-4"
+                        style={{ 
+                          fontFamily: "Poppins, system-ui, sans-serif",
+                          fontSize: "15px",
+                          lineHeight: "24px",
+                          color: "#171717"
+                        }}
+                      >
+                        {faq.answer}
+                      </p>
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
+
+            {/* Right Column - Contact Form */}
+            <div className="bg-white rounded-2xl p-8 shadow-xl border-2 border-[#f2572b]/20">
+              <div className="mb-6">
+                <h3 
+                  className="text-2xl font-bold mb-2"
+                  style={{ 
+                    fontFamily: "trap, Poppins, system-ui, sans-serif",
+                    color: "#171717" 
+                  }}
+                >
+                  Call Us <span className="text-[#f2572b]">Right Now</span>
+                </h3>
+                <p 
+                  style={{ 
+                    fontFamily: "Poppins, system-ui, sans-serif",
+                    color: "#171717" 
+                  }}
+                >
+                  Get instant consultation without any cost.
+                </p>
+              </div>
+
+              <form className="space-y-4">
+                <div className="grid grid-cols-2 gap-4">
+                  <input
+                    type="text"
+                    placeholder="First Name"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#f2572b] focus:border-transparent outline-none"
+                    required
+                  />
+                  <input
+                    type="text"
+                    placeholder="Last Name"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#f2572b] focus:border-transparent outline-none"
+                    required
+                  />
+                </div>
+
+                <input
+                  type="email"
+                  placeholder="Work Email"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#f2572b] focus:border-transparent outline-none"
+                  required
+                />
+
+                <input
+                  type="tel"
+                  placeholder="Phone Number"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#f2572b] focus:border-transparent outline-none"
+                  required
+                />
+
+                <select className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#f2572b] focus:border-transparent outline-none text-gray-500">
+                  <option value="">- Your State -</option>
+                  <option value="Alabama">Alabama</option>
+                  <option value="Alaska">Alaska</option>
+                  <option value="Arizona">Arizona</option>
+                  <option value="Arkansas">Arkansas</option>
+                  <option value="California">California</option>
+                  <option value="Colorado">Colorado</option>
+                  <option value="Connecticut">Connecticut</option>
+                  <option value="Delaware">Delaware</option>
+                  <option value="Florida">Florida</option>
+                  <option value="Georgia">Georgia</option>
+                  <option value="Hawaii">Hawaii</option>
+                  <option value="Idaho">Idaho</option>
+                  <option value="Illinois">Illinois</option>
+                  <option value="Indiana">Indiana</option>
+                  <option value="Iowa">Iowa</option>
+                  <option value="Kansas">Kansas</option>
+                  <option value="Kentucky">Kentucky</option>
+                  <option value="Louisiana">Louisiana</option>
+                  <option value="Maine">Maine</option>
+                  <option value="Maryland">Maryland</option>
+                  <option value="Massachusetts">Massachusetts</option>
+                  <option value="Michigan">Michigan</option>
+                  <option value="Minnesota">Minnesota</option>
+                  <option value="Mississippi">Mississippi</option>
+                  <option value="Missouri">Missouri</option>
+                  <option value="Montana">Montana</option>
+                  <option value="Nebraska">Nebraska</option>
+                  <option value="Nevada">Nevada</option>
+                  <option value="New Hampshire">New Hampshire</option>
+                  <option value="New Jersey">New Jersey</option>
+                  <option value="New Mexico">New Mexico</option>
+                  <option value="New York">New York</option>
+                  <option value="North Carolina">North Carolina</option>
+                  <option value="North Dakota">North Dakota</option>
+                  <option value="Ohio">Ohio</option>
+                  <option value="Oklahoma">Oklahoma</option>
+                  <option value="Oregon">Oregon</option>
+                  <option value="Pennsylvania">Pennsylvania</option>
+                  <option value="Rhode Island">Rhode Island</option>
+                  <option value="South Carolina">South Carolina</option>
+                  <option value="South Dakota">South Dakota</option>
+                  <option value="Tennessee">Tennessee</option>
+                  <option value="Texas">Texas</option>
+                  <option value="Utah">Utah</option>
+                  <option value="Vermont">Vermont</option>
+                  <option value="Virginia">Virginia</option>
+                  <option value="Washington">Washington</option>
+                  <option value="West Virginia">West Virginia</option>
+                  <option value="Wisconsin">Wisconsin</option>
+                  <option value="Wyoming">Wyoming</option>
+                </select>
+
+                <input
+                  type="text"
+                  placeholder="Company Name"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#f2572b] focus:border-transparent outline-none"
+                  required
+                />
+
+                <input
+                  type="text"
+                  placeholder="What are you looking for?"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#f2572b] focus:border-transparent outline-none"
+                  required
+                />
+
+                <button
+                  type="submit"
+                  className="w-full bg-[#f2572b] text-white py-3 px-6 rounded-lg font-medium hover:bg-[#e04a1f] transition-colors"
+                >
+                  Next Step
+                </button>
+              </form>
+            </div>
           </div>
         </div>
       </section>
@@ -375,4 +584,3 @@ const OutsourceConstruction = () => {
 };
 
 export default OutsourceConstruction;
-

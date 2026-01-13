@@ -124,7 +124,7 @@ const ServicesSection = () => {
           <div className="text-center mb-12">
             <h3 className="text-3xl font-bold text-gray-900 mb-4">
               Discover How
-              <span className="bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent"> EZYBUILDS</span>
+              <span className="bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent"> remoteseat</span>
               Can Help You
             </h3>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto">

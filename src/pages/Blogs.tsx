@@ -7,7 +7,7 @@ const Blogs = () => {
   const blogPosts = [
     {
       id: 1,
-      title: "EzyBuilds Construction Estimators Who Turn Numbers Into Confidence",
+      title: "remoteseat Construction Estimators Who Turn Numbers Into Confidence",
       excerpt:
         "In today's fast-moving construction world, success starts long before the first brick is laid. It begins with...",
       image:
@@ -19,9 +19,9 @@ const Blogs = () => {
     },
     {
       id: 2,
-      title: "EzyBuilds: Redefining Offshore Solutions for the Construction Industry",
+      title: "remoteseat: Redefining Offshore Solutions for the Construction Industry",
       excerpt:
-        "In today's fast-paced construction world, time and precision are critical. At EzyBuilds, we don't just provide offshore...",
+        "In today's fast-paced construction world, time and precision are critical. At remoteseat, we don't just provide offshore...",
       image:
         "https://ezybuilds.com/wp-content/uploads/2025/10/ChatGPT-Image-Oct-18-2025-03_47_03-AM-e1760741930453-1024x577.webp",
       date: "17 Oct",
@@ -31,7 +31,7 @@ const Blogs = () => {
     },
     {
       id: 3,
-      title: "How EzyBuilds Streamlines Construction Outsourcing for Maximum Efficiency",
+      title: "How remoteseat Streamlines Construction Outsourcing for Maximum Efficiency",
       excerpt:
         "Outsource Your Construction Staffing to Stay Ahead of the Competition Outsourcing is no longer a trend; it's...",
       image:
@@ -52,7 +52,7 @@ const Blogs = () => {
             <div className="text-center mb-16">
               <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">Blogs</h1>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                Learn the latest EzyBuilds releases, trends and noteworthy news.
+                Learn the latest remoteseat releases, trends and noteworthy news.
               </p>
             </div>
 

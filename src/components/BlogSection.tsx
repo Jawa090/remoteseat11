@@ -5,33 +5,33 @@ const BlogSection = () => {
   const blogPosts = [
     {
       id: 1,
-      title: "EzyBuilds Construction Estimators Who Turn Numbers Into Confidence",
+      title: "remoteseat Construction Estimators Who Turn Numbers Into Confidence",
       excerpt: "In today's fast-moving construction world, success starts long before the first brick is laid. It begins with...",
       image: "https://ezybuilds.com/wp-content/uploads/2025/10/freepik__the-style-is-candid-image-photography-with-natural__98915-e1760977781144-1024x577.webp",
       date: "20 Oct",
       category: "General",
       readTime: "2min",
-      slug: "ezybuilds-construction-estimators-who-turn-numbers-into-confidence"
+      slug: "remoteseat-construction-estimators-who-turn-numbers-into-confidence"
     },
     {
       id: 2,
-      title: "EzyBuilds: Redefining Offshore Solutions for the Construction Industry",
-      excerpt: "In today's fast-paced construction world, time and precision are critical. At EzyBuilds, we don't just provide offshore...",
+      title: "remoteseat: Redefining Offshore Solutions for the Construction Industry",
+      excerpt: "In today's fast-paced construction world, time and precision are critical. At remoteseat, we don't just provide offshore...",
       image: "https://ezybuilds.com/wp-content/uploads/2025/10/ChatGPT-Image-Oct-18-2025-03_47_03-AM-e1760741930453-1024x577.webp",
       date: "17 Oct",
       category: "General",
       readTime: "4min",
-      slug: "ezybuilds-redefining-offshore-solutions-for-the-construction-industry"
+      slug: "remoteseat-redefining-offshore-solutions-for-the-construction-industry"
     },
     {
       id: 3,
-      title: "How EzyBuilds Streamlines Construction Outsourcing for Maximum Efficiency",
+      title: "How remoteseat Streamlines Construction Outsourcing for Maximum Efficiency",
       excerpt: "Outsource Your Construction Staffing to Stay Ahead of the Competition Outsourcing is no longer a trend; it's...",
       image: "https://ezybuilds.com/wp-content/uploads/2025/10/ChatGPT-Image-Oct-18-2025-03_25_01-AM-e1760742160410-1024x577.webp",
       date: "17 Oct",
       category: "Featured",
       readTime: "2min",
-      slug: "how-ezybuilds-streamlines-construction-outsourcing-for-maximum-efficiency"
+      slug: "how-remoteseat-streamlines-construction-outsourcing-for-maximum-efficiency"
     }
   ];
 

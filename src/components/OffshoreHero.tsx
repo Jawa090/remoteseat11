@@ -2,11 +2,11 @@ import { ArrowRight } from "lucide-react";
 
 const OffshoreHero = () => {
   return (
-    <section className="relative w-full overflow-hidden bg-[#3a3a3a] pt-16 md:pt-20">
+    <section className="relative w-full overflow-hidden bg-[#171717] pt-16 md:pt-20">
       {/* Blueprint overlay */}
       <div className="pointer-events-none absolute inset-0 z-0 bg-[url('/assets/cta-blueprint.webp')] bg-no-repeat bg-[position:92%_center] bg-cover opacity-75 mix-blend-screen filter brightness-125 contrast-110" aria-hidden="true" />
       {/* Top/Bottom bands to mimic reference framing */}
-      <div className="pointer-events-none absolute inset-x-0 top-0 h-8 md:h-10 bg-[#3a3a3a] -z-10" />
+      <div className="pointer-events-none absolute inset-x-0 top-0 h-8 md:h-10 bg-[#171717] -z-10" />
       
 
       <div className="relative z-10 mx-auto max-w-7xl px-6 md:px-8 lg:px-10">
@@ -25,7 +25,7 @@ const OffshoreHero = () => {
             <div className="mt-6">
               <a
                 href="/contact-us"
-                className="inline-flex items-center gap-2 rounded-full bg-[#C95B4A] px-6 py-3 font-semibold text-white transition-colors hover:bg-[#b34e3f]"
+                className="inline-flex items-center gap-2 rounded-full bg-[#f2572b] px-6 py-3 font-semibold text-white transition-colors hover:bg-[#e04a1f]"
               >
                 Get Your Free Consultation
                 <ArrowRight className="h-5 w-5" />

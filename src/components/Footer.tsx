@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import { Phone, MapPin, Mail, Facebook, Instagram, Linkedin, ArrowUp } from "lucide-react";
-import buildLogo from "../assets/images/build-logo.png";
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -8,16 +7,16 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-[#373737] text-white">
+    <footer className="bg-[#171717] text-white">
       <div className="max-w-7xl mx-auto px-6 lg:px-8 py-16">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand & Description */}
           <div className="lg:col-span-1">
             <Link to="/" className="flex items-center mb-6">
               <img 
-                src={buildLogo}
-                alt="EZYBUILDS" 
-                className="h-8 w-auto"
+                src="/logo.png"
+                alt="remoteseat" 
+                className="h-16 w-auto lg:h-20"
               />
             </Link>
             <p className="text-gray-300 mb-6 leading-relaxed">
@@ -30,7 +29,7 @@ const Footer = () => {
                 href="https://www.facebook.com/ezybuilds.aec" 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-orange-500 transition-colors"
+                className="w-10 h-10 bg-[#171717] rounded-full flex items-center justify-center hover:bg-[#f2572b] transition-colors"
               >
                 <Facebook className="w-5 h-5" />
               </a>
@@ -38,7 +37,7 @@ const Footer = () => {
                 href="https://www.instagram.com/ezy.builds/" 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-orange-500 transition-colors"
+                className="w-10 h-10 bg-[#171717] rounded-full flex items-center justify-center hover:bg-[#f2572b] transition-colors"
               >
                 <Instagram className="w-5 h-5" />
               </a>
@@ -46,7 +45,7 @@ const Footer = () => {
                 href="https://www.linkedin.com/company/ezybuilds/" 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-orange-500 transition-colors"
+                className="w-10 h-10 bg-[#171717] rounded-full flex items-center justify-center hover:bg-[#f2572b] transition-colors"
               >
                 <Linkedin className="w-5 h-5" />
               </a>
@@ -59,7 +58,7 @@ const Footer = () => {
             <div className="space-y-4">
               <a 
                 href="tel:+15108617074" 
-                className="flex items-center gap-3 text-gray-300 hover:text-orange-400 transition-colors"
+                className="flex items-center gap-3 text-gray-300 hover:text-[#f2572b] transition-colors"
               >
                 <Phone className="w-5 h-5 text-orange-500" />
                 <span>+1 (510) 861-7074</span>
@@ -70,7 +69,7 @@ const Footer = () => {
               </div>
               <a 
                 href="mailto:info@ezybuilds.com" 
-                className="flex items-center gap-3 text-gray-300 hover:text-orange-400 transition-colors"
+                className="flex items-center gap-3 text-gray-300 hover:text-[#f2572b] transition-colors"
               >
                 <Mail className="w-5 h-5 text-orange-500" />
                 <span>info@ezybuilds.com</span>
@@ -127,7 +126,7 @@ const Footer = () => {
         <div className="border-t border-gray-800 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-gray-400 text-sm">
-              © 2026 EZYBUILDS. All rights reserved.
+              © 2026 remoteseat. All rights reserved.
             </p>
             
             <div className="flex items-center gap-6">
@@ -138,7 +137,7 @@ const Footer = () => {
               {/* Scroll to Top Button */}
               <button
                 onClick={scrollToTop}
-                className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-orange-500 transition-colors"
+                className="w-10 h-10 bg-[#171717] rounded-full flex items-center justify-center hover:bg-[#f2572b] transition-colors"
                 aria-label="Scroll to top"
               >
                 <ArrowUp className="w-5 h-5" />

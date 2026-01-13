@@ -18,13 +18,13 @@ const ArchitecturalVisualizationSection = () => {
   ];
 
   return (
-    <section className="w-full bg-[#3A3A3A] py-28 px-6 md:px-16">
+    <section className="w-full bg-[#171717] py-28 px-6 md:px-16">
       <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-6 text-center md:flex-row md:items-start md:text-left">
         <div className="max-w-4xl">
           <h2 className="text-white text-4xl font-semibold leading-tight">
             Architectural Visualization
             <br />
-            and <span className="text-[#D9654B]">3D Rendering Services</span>
+            and <span className="text-[#f2572b]">3D Rendering Services</span>
           </h2>
         </div>
         <p className="max-w-[280px] text-sm text-gray-300 md:mt-2">

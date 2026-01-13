@@ -1,7 +1,7 @@
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
+import OutperformSection from "@/components/OutperformSection";
 import LogoMarquee from "@/components/LogoMarquee";
-import CompetitiveAdvantageSection from "@/components/CompetitiveAdvantageSection";
 import PricingSection from "@/components/PricingSection";
 import ProcessSection from "@/components/ProcessSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
@@ -18,7 +18,7 @@ const Index = () => {
       <main className="pt-20">
         <HeroSection />
         <LogoMarquee />
-        <CompetitiveAdvantageSection />
+        <OutperformSection />
         <DiscoverSection />
         <PricingSection />
         <OffshoreHero />

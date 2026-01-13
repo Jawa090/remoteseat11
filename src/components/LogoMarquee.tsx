@@ -28,7 +28,7 @@ const logos = [
 
 const LogoMarquee = () => {
   return (
-    <section className="relative overflow-hidden bg-[#C95B4A] py-12">
+    <section className="relative overflow-hidden bg-[#f2572b] py-12">
       <div id="uc_logo_marquee_elementor_3ab5e14" className="ucaddon_logo_marquee elementor-element elementor-element-3ab5e14 elementor-widget elementor-widget-ucaddon_logo_marquee">
         <div className="elementor-widget-container">
           <div className="uc-logo-wrapper">
