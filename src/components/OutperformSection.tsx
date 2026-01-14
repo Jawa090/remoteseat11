@@ -23,8 +23,17 @@ const OutperformSection = () => {
   return (
     <section className="relative overflow-hidden bg-[#dbd4ce] py-24 lg:py-32">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="grid items-start gap-12 lg:grid-cols-2">
-          {/* Left Side - Text Content */}
+        <div className="grid items-center gap-12 lg:grid-cols-2">
+          {/* Left Side - Image */}
+          <div className="relative hidden lg:flex justify-start items-stretch h-full">
+            <img
+              src="/4.png"
+              alt="Team Collaboration"
+              className="w-full h-full object-cover"
+            />
+          </div>
+
+          {/* Right Side - Content */}
           <div className="space-y-6">
             <div>
               <h2
@@ -63,53 +72,53 @@ const OutperformSection = () => {
             >
               Think of us as a flexible extension of your team, ensuring your project's success from blueprint to reality. Access US-standard talent without hiring locally and save thousands on salaries, benefits, and training.
             </p>
-          </div>
 
-          {/* Right Side - Stats Boxes */}
-          <div className="grid grid-cols-2 gap-4 lg:gap-6">
-            {stats.map((stat, index) => (
-              <div
-                key={index}
-                className="bg-white rounded-xl p-6 border-2 border-[#f2572b] shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
-              >
-                <div className="space-y-2">
-                  <div className="flex flex-col">
-                    <span
-                      className="font-bold text-[#171717]"
-                      style={{
-                        fontFamily: "trap, Poppins, system-ui, sans-serif",
-                        fontSize: "36px",
-                        lineHeight: "42px",
-                      }}
-                    >
-                      {stat.value}
-                    </span>
-                    {stat.subValue && (
+            {/* Stats Boxes */}
+            <div className="grid grid-cols-2 gap-4 lg:gap-6 pt-4">
+              {stats.map((stat, index) => (
+                <div
+                  key={index}
+                  className="bg-white rounded-xl p-6 border-2 border-[#f2572b] shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+                >
+                  <div className="space-y-2">
+                    <div className="flex flex-col">
                       <span
-                        className="font-semibold text-[#f2572b] mt-1"
+                        className="font-bold text-[#171717]"
                         style={{
                           fontFamily: "trap, Poppins, system-ui, sans-serif",
-                          fontSize: "20px",
-                          lineHeight: "24px",
+                          fontSize: "36px",
+                          lineHeight: "42px",
                         }}
                       >
-                        {stat.subValue}
+                        {stat.value}
                       </span>
-                    )}
+                      {stat.subValue && (
+                        <span
+                          className="font-semibold text-[#f2572b] mt-1"
+                          style={{
+                            fontFamily: "trap, Poppins, system-ui, sans-serif",
+                            fontSize: "20px",
+                            lineHeight: "24px",
+                          }}
+                        >
+                          {stat.subValue}
+                        </span>
+                      )}
+                    </div>
+                    <p
+                      className="text-[#171717] text-sm leading-relaxed"
+                      style={{
+                        fontFamily: "Poppins, system-ui, sans-serif",
+                        fontSize: "14px",
+                        lineHeight: "20px",
+                      }}
+                    >
+                      {stat.label}
+                    </p>
                   </div>
-                  <p
-                    className="text-[#171717] text-sm leading-relaxed"
-                    style={{
-                      fontFamily: "Poppins, system-ui, sans-serif",
-                      fontSize: "14px",
-                      lineHeight: "20px",
-                    }}
-                  >
-                    {stat.label}
-                  </p>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </div>
