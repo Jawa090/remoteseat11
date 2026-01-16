@@ -252,16 +252,14 @@ const ExtendTeam = () => {
               </div>
             </div>
 
-              {/* Right Content - Calendly Widget (Hidden on Mobile) */}
+              {/* Right Content - Image (Hidden on Mobile) */}
               <div className="hidden lg:block">
                 <div className="bg-white rounded-2xl overflow-hidden shadow-2xl border-2 border-[#f2572b]/20 min-w-[320px] h-[500px]">
-                <iframe
-                  src="https://calendly.com/ezy-teams/ezybuilds-project-discussion-meeting-clone?embed_domain=ezybuilds.com&embed_type=Inline&hide_event_type_details=1&hide_gdpr_banner=1"
-                  width="100%"
-                  height="100%"
-                  title="Select a Date & Time - Calendly"
-                  className="rounded-[12px] border-0"
-                />
+                  <img
+                    src="/16.png"
+                    alt="Construction Team"
+                    className="w-full h-full object-cover rounded-[12px]"
+                  />
               </div>
             </div>
           </div>
