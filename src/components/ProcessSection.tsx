@@ -3,25 +3,25 @@ const steps = [
     number: "1",
     circle: "bg-[#f2572b]",
     title: "Tell Us Your Needs",
-    description: "We begin by thoroughly discussing your requirements and processing your specific needs to understand your project goals.",
+    description: "Share your construction estimating, BIM services, or project support requirements—we'll understand your bid deadlines and US standards.",
   },
   {
     number: "2",
     circle: "bg-[#f2572b]",
-    title: "Get Pre-Screened Candidates",
-    description: "We provide you with a selection of pre-screened, vetted, and assessed resumes, allowing you to choose the best fit for your team.",
+    title: "Get Pre-Screened Experts",
+    description: "Receive handpicked resumes of skilled cost estimators, BIM technicians, and support staff ready for your projects.",
   },
   {
     number: "3",
     circle: "bg-[#f2572b]",
     title: "Choose Your Team",
-    description: "You conduct interviews with your chosen candidates, ensuring a perfect match for your project and company culture.",
+    description: "Interview and select dedicated remote estimators who match your workflow and construction needs perfectly.",
   },
   {
     number: "4",
     circle: "bg-[#171717]",
-    title: "We Handle the Rest",
-    description: "We handle the onboarding process, contracts, payroll, and IT setup, seamlessly integrating your new team members into your workflow.",
+    title: "We Handle Everything",
+    description: "Onboarding, contracts, payroll, software setup—your remote construction team starts delivering bids immediately.",
   },
 ];
 
@@ -41,7 +41,7 @@ const ProcessSection = () => {
               className="mt-2 text-center text-sm md:text-left"
               style={{ fontFamily: "Poppins, system-ui, sans-serif", color: "#171717" }}
             >
-              Get matched with pre-vetted AEC talent in days, not months.
+              Get matched with top remote construction estimators and BIM experts in days, not months.
             </p>
 
             <div className="mt-10 space-y-7">
@@ -74,7 +74,7 @@ const ProcessSection = () => {
               <div className="w-full overflow-hidden rounded-2xl bg-[#2f2f2f]/10 p-4">
                 <div className="relative w-full overflow-hidden rounded-xl aspect-[552/360]">
                   <img
-                    src="https://ezybuilds.com/wp-content/uploads/2025/03/4bg.webp"
+                    src="/15.png"
                     alt="Blueprint rendering"
                     className="absolute inset-0 h-full w-full object-cover"
                     loading="lazy"
@@ -86,9 +86,9 @@ const ProcessSection = () => {
               className="mt-6 max-w-[460px] text-center text-[22px] font-semibold leading-tight lg:mt-auto lg:mb-4 lg:pt-4 lg:text-left"
               style={{ fontFamily: "trap, Poppins, system-ui, sans-serif", color: "#171717" }}
             >
-              Build a <span className="text-[#f2572b]">winning team</span> by partnering
+              Build <span className="text-[#f2572b]">winning construction bids</span> by partnering
               <br />
-              with remoteseat
+              with RemoteSeat
             </p>
           </div>
         </div>

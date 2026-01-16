@@ -1,38 +1,9 @@
-import { Card, CardContent } from "@/components/ui/card";
-
-const pricingData = [
-  {
-    role: "Experienced Architects",
-    offshore: "$13-15/hour",
-    local: "$69.33/hour",
-    savings: "~$115,000",
-  },
-  {
-    role: "Experienced Cost Estimators",
-    offshore: "$10-15/hour",
-    local: "$39.90/hour",
-    savings: "~$57,000",
-  },
-  {
-    role: "Experienced Project Managers",
-    offshore: "$15/hour",
-    local: "$39.49/hour",
-    savings: "~$74,000",
-  },
-  {
-    role: "Experienced Civil Engineers",
-    offshore: "$13-15/hour",
-    local: "$35.35/hour",
-    savings: "~$63,000",
-  },
-];
-
 import { useState, useEffect } from 'react';
 
 const PricingSection = () => {
   const [activeCard, setActiveCard] = useState(0);
 
-  const handleMouseEnter = (index) => {
+  const handleMouseEnter = (index: number) => {
     setActiveCard(index);
   };
 
@@ -174,25 +145,9 @@ const PricingSection = () => {
 
   const cards = [
     {
-      id: 'uc_expanding_content_cards_elementor_c5cfeb5_item1',
-      class: 'elementor-repeater-item-7f16135',
-      title: 'Experienced <br> Architects',
-      image: 'https://ezybuilds.com/wp-content/uploads/2025/03/cheerful-african-american-architect-holding-bluepr-2024-11-17-17-04-27-utc-2.webp',
-      content: `
-        <div>Offshore Hiring</div>
-        <div class="price"><span style="font-size: 8pt;">From</span> $13/hour</div>
-        <div>Vs.</div>
-        <div>Local Hiring</div>
-        <div>$70/hour</div>
-        <div>Annual Avg. Saving</div>
-        <div class="price">~$115,000</div>
-      `
-    },
-    {
-      id: 'uc_expanding_content_cards_elementor_c5cfeb5_item2',
-      class: 'elementor-repeater-item-282d3bc',
+      id: 'pricing_card_estimators',
       title: 'Experienced <br> Cost Estimators',
-      image: 'https://ezybuilds.com/wp-content/uploads/2025/03/weds.webp',
+      image: '/7.png',
       content: `
         <div>Offshore Hiring</div>
         <div class="price"><span style="font-size: 8pt;">From</span> $13/hour</div>
@@ -204,33 +159,45 @@ const PricingSection = () => {
       `
     },
     {
-      id: 'uc_expanding_content_cards_elementor_c5cfeb5_item3',
-      class: 'elementor-repeater-item-b074d8e',
-      title: 'Experienced <br> Project Managers',
-      image: 'https://ezybuilds.com/wp-content/uploads/2025/03/experience-arhitect.webp',
-      content: `
-        <div>Offshore Hiring</div>
-        <div class="price"><span style="font-size: 8pt;">From</span> $15/hour</div>
-        <div>Vs.</div>
-        <div>Local Hiring</div>
-        <div>$40/hour</div>
-        <div>Annual Avg. Saving</div>
-        <div class="price">~$74,000</div>
-      `
-    },
-    {
-      id: 'uc_expanding_content_cards_elementor_c5cfeb5_item4',
-      class: 'elementor-repeater-item-418d716',
-      title: 'Experienced <br> Civil Engineers',
-      image: 'https://ezybuilds.com/wp-content/uploads/2025/03/civil-engr-768x432.webp',
+      id: 'pricing_card_bim',
+      title: 'Experienced <br> BIM Specialists',
+      image: '/8.png',
       content: `
         <div>Offshore Hiring</div>
         <div class="price"><span style="font-size: 8pt;">From</span> $13/hour</div>
         <div>Vs.</div>
         <div>Local Hiring</div>
-        <div>$36/hour</div>
+        <div>$55/hour</div>
         <div>Annual Avg. Saving</div>
-        <div class="price">~$63,000</div>
+        <div class="price">~$87,000</div>
+      `
+    },
+    {
+      id: 'pricing_card_support',
+      title: 'Experienced <br> Project Support',
+      image: '/9.png',
+      content: `
+        <div>Offshore Hiring</div>
+        <div class="price"><span style="font-size: 8pt;">From</span> $12/hour</div>
+        <div>Vs.</div>
+        <div>Local Hiring</div>
+        <div>$35/hour</div>
+        <div>Annual Avg. Saving</div>
+        <div class="price">~$48,000</div>
+      `
+    },
+    {
+      id: 'pricing_card_coordinators',
+      title: 'Experienced <br> Construction Coordinators',
+      image: '/10.png',
+      content: `
+        <div>Offshore Hiring</div>
+        <div class="price"><span style="font-size: 8pt;">From</span> $15/hour</div>
+        <div>Vs.</div>
+        <div>Local Hiring</div>
+        <div>$45/hour</div>
+        <div>Annual Avg. Saving</div>
+        <div class="price">~$62,000</div>
       `
     }
   ];
@@ -241,12 +208,12 @@ const PricingSection = () => {
         <div className="flex flex-col lg:flex-row justify-between items-start mb-16">
           <div className="lg:w-1/2 mb-6 lg:mb-0">
             <h2 className="text-4xl md:text-5xl font-bold leading-tight" style={{ color: 'white' }}>
-              Lesser Cost. <span style={{ color: '#ff6a3d' }}>No Compromise on Quality</span>
+              Lower Costs. <span style={{ color: '#ff6a3d' }}>Same High Quality</span>
             </h2>
           </div>
           <div className="lg:w-1/2 lg:text-right">
             <p className="text-lg max-w-lg lg:ml-auto leading-relaxed" style={{ color: 'white' }}>
-              Reduce overhead with offshore talent – US-trained, software-certified, and fluent in English.
+              Cut overhead with remote construction experts—trained to US standards, certified in key software, and fluent in English.
             </p>
           </div>
         </div>

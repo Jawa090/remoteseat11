@@ -5,19 +5,19 @@ import { ArrowRight } from "lucide-react";
 const HeroSection = () => {
   const slides = [
     {
-      line1: "Hire Offshore BIM",
+      line1: "Hire Top 1% Offshore",
+      line2: "Construction Estimators & Project Support Staff",
+      line3: "",
+      description:
+        "Get pre-approved remote construction cost estimators, BIM estimating services, and construction estimating outsourcing solutions. Save money, grow quickly, and easily develop a remote staff.",
+      image: "/1.png",
+    },
+    {
+      line1: "Hire Top Offshore BIM",
       line2: "Technicians & 3D",
       line3: "Modelers",
       description:
-        "Bring BIM & 3D modeling expertise on board through our offshore staffing agency. Highly skilled remote professionals at a fraction of local cost to support your project delivery and also help you attract more high-ticket clients.",
-      image: "/2.png",
-    },
-    {
-      line1: "Hire Offshore Estimators &",
-      line2: "Project Support Staff",
-      line3: "",
-      description:
-        "Scale your AEC team with estimators and project support specialists. Our offshore staffing agency delivers vetted talent who understand US construction standards.",
+        "For accurate 3D modeling, project support, and on-site delivery, get in touch with qualified remote BIM experts. Increase bid wins, simplify processes, and easily engage in high-value clients.",
       image: "/3.png",
     },
     {
@@ -25,8 +25,8 @@ const HeroSection = () => {
       line2: "Architects, Estimators &",
       line3: "Structural Engineers",
       description:
-        "Access pre-vetted AEC talent – architects, estimators, and structural engineers trained to meet US standards with our offshore staffing solutions. Save costs, scale quickly, and build your remote team.",
-      image: "/0.png",
+        "Scale your AEC projects effortlessly with pre-vetted remote estimators, BIM specialists, and dedicated support teams. Our offshore staffing solutions deliver US-standard experts in construction cost estimating, BIM services, and outsourcing—saving up to 70% on costs while ensuring bid-winning accuracy.",
+      image: "/2.png",
     },
   ];
 
@@ -42,10 +42,10 @@ const HeroSection = () => {
   return (
     <section className="relative overflow-hidden bg-[#171717]">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="relative py-8 lg:py-12">
-          <div className="grid lg:grid-cols-2 gap-8 items-center">
+        <div className="relative py-8 lg:py-12 lg:pb-0">
+          <div className="grid lg:grid-cols-2 gap-8 items-end min-h-[400px] lg:min-h-[480px]">
             {/* Left side - Text content */}
-            <div className="relative z-10 lg:pr-12">
+            <div className="relative z-10 lg:pr-12 pb-8 lg:pb-12">
               <div className="w-full text-center lg:text-left">
                 <h1
                   className="font-semibold tracking-[-2px] text-white"
@@ -92,12 +92,12 @@ const HeroSection = () => {
             </div>
 
             {/* Right side - Image */}
-            <div className={`relative hidden lg:flex justify-end items-start h-full -mt-4 lg:pl-8 ${activeIndex === 1 || activeIndex === 2 ? '-mb-12 lg:-mb-16' : ''}`}>
+            <div className="relative hidden lg:flex justify-end items-end h-full">
               <img
                 key={activeIndex}
                 src={slides[activeIndex].image}
                 alt="Hero"
-                className={`w-full h-auto object-contain object-right transition-opacity duration-500 ${activeIndex === 2 ? 'max-w-[600px]' : 'max-w-[500px]'}`}
+                className="w-full max-w-[520px] h-auto object-contain object-bottom transition-opacity duration-500"
               />
             </div>
           </div>

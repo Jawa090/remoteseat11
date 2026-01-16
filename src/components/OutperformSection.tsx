@@ -4,22 +4,22 @@ import { ArrowRight } from "lucide-react";
 const OutperformSection = () => {
   const stats = [
     {
-      value: "Up to 70%",
-      label: "Savings compared to hiring a US-based professional.",
+      value: "Up to 30%",
+      label: "Savings compared to US-based construction estimators and project staff.",
     },
     {
       value: "Top 1%",
-      label: "Every resource is college-educated, US-trained, rigorously tested.",
+      label: "Every expert is college-educated, trained to US standards, rigorously tested for accuracy in cost estimating and BIM services.",
     },
     {
       value: "100%",
       subValue: "Managed",
-      label: "Recruitment, payroll, and compliance handled.",
+      label: "Recruitment, payroll, compliance, and time-zone alignment fully handled.",
     },
     {
-      value: "30+",
+      value: "20+",
       subValue: "Years",
-      label: "Combined experience and work in your time zone.",
+      label: "Combined experience delivering remote construction estimating outsourcing on your schedule.",
     },
   ];
 
@@ -48,7 +48,7 @@ const OutperformSection = () => {
                 }}
               >
                 Outperform Your Competitors with{" "}
-                <span style={{ color: "#f2572b" }}>Offshore AEC Experts</span>
+                <span style={{ color: "#f2572b" }}>Remote Construction Experts</span>
               </h2>
             </div>
 
@@ -73,7 +73,7 @@ const OutperformSection = () => {
                 lineHeight: "24px",
               }}
             >
-              Think of us as a flexible extension of your team, ensuring your project's success from blueprint to reality. Access US-standard talent without hiring locally and save thousands on salaries, benefits, and training.
+              Think of RemoteSeat as your flexible remote extension—ensuring construction success from blueprint bids to project completion. Hire US-standard estimators, BIM teams, and support staff without local overhead, saving thousands on salaries, benefits, and training costs.
             </p>
 
             {/* Stats Boxes */}
@@ -147,4 +147,3 @@ const OutperformSection = () => {
 };
 
 export default OutperformSection;
-

@@ -15,19 +15,19 @@ const OffshoreHero = () => {
           {/* Left column (text) */}
           <div className="flex flex-col items-center justify-center text-center max-w-[560px]">
             <h1 className="text-white font-bold leading-[1.15] tracking-tight text-[40px] md:text-[50px] lg:text-[60px]">
-              Ready to Offshore
+              Ready to Hire Remote
               <br />
-              AEC Roles?
+              <span style={{ color: "#f2572b" }}>Construction Estimators?</span>
             </h1>
             <p className="mt-4 max-w-[520px] text-[#E6E6E6] text-[15px] leading-[1.6]">
-              Book a free consultation to explore offshore staffing tailored to your budget and deadlines.
+              Book a free consultation to discover offshore estimating teams, BIM services, and project support customized to your budget, timelines, and US construction needs.
             </p>
             <div className="mt-6">
               <a
                 href="/contact-us"
                 className="inline-flex items-center gap-2 rounded-full bg-[#f2572b] px-6 py-3 font-semibold text-white transition-colors hover:bg-[#e04a1f]"
               >
-                Get Your Free Consultation
+                Get Your Free Consultation!
                 <ArrowRight className="h-5 w-5" />
               </a>
             </div>
@@ -36,8 +36,8 @@ const OffshoreHero = () => {
           {/* Right column (image) */}
           <div className="relative z-20 mt-2 md:mt-4 flex w-full self-stretch h-full items-end justify-center pr-0 md:pr-4 lg:pr-6 xl:pr-8">
             <img
-              src="/assets/cheerful-african-american-architect-holding-bluepr-2024-11-17-17-04-27-utc-1-1.webp"
-              alt="AEC professional holding rolled blueprints"
+              src="/11.png"
+              alt="Construction professional holding rolled blueprints"
               className="h-full w-full object-contain object-bottom"
               loading="eager"
             />

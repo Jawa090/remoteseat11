@@ -1,19 +1,19 @@
 const ArchitecturalVisualizationSection = () => {
   const services = [
     {
-      title: "3D\nInterior\nRendering",
-      description: "Transform spaces with lifelike interior visuals for client approvals.",
-      image: "https://ezybuilds.com/wp-content/uploads/2025/03/91c4506effdbbe878d63ca7acc066152-scaled.webp"
+      title: "3D\nInterior\nCost Visuals",
+      description: "Lifelike interior renderings with accurate quantity takeoffs for client approvals and estimating.",
+      image: "/12.png"
     },
     {
-      title: "3D\nFurniture\nRendering",
-      description: "Showcase designs with detailed, manufacturable 3D furniture models.",
-      image: "/2.webp"
+      title: "3D\nFixture & Furniture\nEstimating",
+      description: "Production-ready 3D models including detailed material schedules and construction cost breakdowns.",
+      image: "/13.png"
     },
     {
-      title: "3D\nExterior\nRendering",
-      description: "Present building exteriors with realistic lighting, textures, and environments.",
-      image: "https://ezybuilds.com/wp-content/uploads/2025/03/238eb48f14730c589c8ff67a0d4b5841-scaled.webp"
+      title: "3D\nExterior\nBid Renderings",
+      description: "Site-specific exteriors showing realistic materials, lighting, and complete cost estimation data.",
+      image: "/14.png"
     }
   ];
 
@@ -22,13 +22,13 @@ const ArchitecturalVisualizationSection = () => {
       <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-6 text-center md:flex-row md:items-start md:text-left">
         <div className="max-w-4xl">
           <h2 className="text-white text-4xl font-semibold leading-tight">
-            Architectural Visualization
+            Construction 3D Visualization
             <br />
-            and <span className="text-[#f2572b]">3D Rendering Services</span>
+            & <span className="text-[#f2572b]">Estimating Renderings</span>
           </h2>
         </div>
         <p className="max-w-[280px] text-sm text-gray-300 md:mt-2">
-          Trusted by AEC firms for high-quality 3D models and photorealistic renders.
+          Trusted by contractors for precise 3D models with material takeoffs and bid-ready photorealistic renders.
         </p>
       </div>
 

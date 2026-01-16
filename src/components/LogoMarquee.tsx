@@ -1,5 +1,3 @@
-import React from 'react';
-
 import archicadLogo from '../assets/images/logos/archicad.svg';
 import autocadLogo from '../assets/images/logos/autocad.svg';
 import bluebeamLogo from '../assets/images/logos/bluebeam.svg';
@@ -29,22 +27,47 @@ const logos = [
 const LogoMarquee = () => {
   return (
     <section className="relative overflow-hidden bg-[#f2572b] py-12">
-      <div id="uc_logo_marquee_elementor_3ab5e14" className="ucaddon_logo_marquee elementor-element elementor-element-3ab5e14 elementor-widget elementor-widget-ucaddon_logo_marquee">
-        <div className="elementor-widget-container">
-          <div className="uc-logo-wrapper">
-            <div className="uc-logo-item-holder">
-              <div className="uc-logo-items logo-scroll">
-                {[...logos, ...logos].map((logo, index) => (
-                  <div key={index} className="uc-logo-item">
-                    <img 
-                      src={logo.src} 
-                      alt={logo.name}
-                      className="w-auto h-8 md:h-10 lg:h-12 object-contain"
-                    />
-                  </div>
-                ))}
+      <style>{`
+        .uc-logo-wrapper {
+          overflow: hidden;
+          width: 100%;
+        }
+        .uc-logo-item-holder {
+          display: flex;
+          width: 100%;
+        }
+        .uc-logo-items {
+          display: flex;
+          gap: 60px;
+          animation: scroll 30s linear infinite;
+        }
+        .uc-logo-item {
+          flex-shrink: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        @keyframes scroll {
+          0% {
+            transform: translateX(0);
+          }
+          100% {
+            transform: translateX(-50%);
+          }
+        }
+      `}</style>
+      <div className="uc-logo-wrapper">
+        <div className="uc-logo-item-holder">
+          <div className="uc-logo-items logo-scroll">
+            {[...logos, ...logos].map((logo, index) => (
+              <div key={index} className="uc-logo-item">
+                <img 
+                  src={logo.src} 
+                  alt={logo.name}
+                  className="w-auto h-8 md:h-10 lg:h-12 object-contain"
+                />
               </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>
