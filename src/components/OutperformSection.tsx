@@ -1,3 +1,6 @@
+import { Link } from "react-router-dom";
+import { ArrowRight } from "lucide-react";
+
 const OutperformSection = () => {
   const stats = [
     {
@@ -118,6 +121,23 @@ const OutperformSection = () => {
                   </div>
                 </div>
               ))}
+            </div>
+
+            {/* CTA Button */}
+            <div className="mt-8 flex justify-center lg:justify-start">
+              <Link
+                to="/contact-us"
+                className="relative inline-flex items-center justify-center rounded-full bg-[#f2572b] px-[30px] py-[16px] text-white hover:bg-[#e04a1f] transition-colors overflow-hidden shadow-lg"
+                style={{ fontFamily: "Poppins, system-ui, sans-serif", fontSize: "14px", fontWeight: 500 }}
+              >
+                <div className="absolute inset-0 rounded-full bg-gradient-to-b from-white/50 via-white/20 to-transparent" style={{ height: '60%' }}></div>
+                <div className="absolute inset-0 rounded-full" style={{ 
+                  background: 'linear-gradient(180deg, rgba(255,255,255,0.4) 0%, rgba(255,255,255,0.1) 40%, transparent 60%)',
+                  boxShadow: 'inset 0 1px 2px rgba(255,255,255,0.5)'
+                }}></div>
+                <span className="relative z-10">Get Your Free Consult</span>
+                <ArrowRight className="relative z-10 ml-2 h-4 w-4" />
+              </Link>
             </div>
           </div>
         </div>
