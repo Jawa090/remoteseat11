@@ -83,9 +83,9 @@ const OutsourceConstruction = () => {
   return (
     <div className="min-h-screen bg-white">
       <Header />
-      
+
       {/* Hero Section */}
-      <section 
+      <section
         className="relative py-16 lg:py-28 overflow-hidden"
         style={{
           backgroundImage: 'url(https://ezybuilds.com/wp-content/uploads/2025/03/hero-blueprint.webp)',
@@ -99,7 +99,7 @@ const OutsourceConstruction = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left Content */}
             <div className="space-y-6">
-              <h1 
+              <h1
                 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight"
                 style={{ fontFamily: "trap, Poppins, system-ui, sans-serif", color: "#171717" }}
               >
@@ -139,7 +139,7 @@ const OutsourceConstruction = () => {
       {/* Construction Deadlines Don't Wait Section */}
       <section className="py-16 lg:py-20 relative overflow-hidden bg-white">
         {/* Background Image with low opacity */}
-        <div 
+        <div
           className="absolute inset-0 opacity-[0.03]"
           style={{
             backgroundImage: 'url(https://ezybuilds.com/wp-content/uploads/2025/03/hero-blueprint.webp)',
@@ -149,7 +149,7 @@ const OutsourceConstruction = () => {
           }}
         ></div>
         <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
-          <h2 
+          <h2
             className="text-3xl lg:text-4xl font-bold mb-6"
             style={{ fontFamily: "trap, Poppins, system-ui, sans-serif", color: "#171717" }}
           >
@@ -188,7 +188,7 @@ const OutsourceConstruction = () => {
       </section>
 
       {/* Software & Tools Section */}
-      <section 
+      <section
         className="bg-[#f2572b] py-16 lg:py-20 relative overflow-hidden"
         style={{
           backgroundImage: 'url(https://ezybuilds.com/wp-content/uploads/2025/03/plan-2.webp)',
@@ -200,7 +200,7 @@ const OutsourceConstruction = () => {
         <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             <div>
-              <h2 
+              <h2
                 className="text-3xl lg:text-4xl font-semibold text-white mb-4"
                 style={{ fontFamily: "trap, Poppins, system-ui, sans-serif" }}
               >
@@ -221,7 +221,7 @@ const OutsourceConstruction = () => {
       {/* Get What You Need Section */}
       <section className="py-16 lg:py-20 relative overflow-hidden bg-white">
         {/* Background Image with low opacity */}
-        <div 
+        <div
           className="absolute inset-0 opacity-[0.03]"
           style={{
             backgroundImage: 'url(https://ezybuilds.com/wp-content/uploads/2025/03/hero-blueprint.webp)',
@@ -231,16 +231,16 @@ const OutsourceConstruction = () => {
           }}
         ></div>
         <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
-          <h2 
+          <h2
             className="text-3xl lg:text-4xl font-bold mb-12 text-center"
             style={{ fontFamily: "trap, Poppins, system-ui, sans-serif", color: "#171717" }}
           >
             Get what you need. <span className="text-[#f2572b]">Only when you need it.</span>
           </h2>
-          
+
           {/* Large Building Image */}
           <div className="mb-12">
-            <img 
+            <img
               src="https://ezybuilds.com/wp-content/uploads/2025/03/building-1.webp"
               alt="Modern building rendering"
               className="w-full h-auto rounded-2xl shadow-xl"
@@ -270,7 +270,7 @@ const OutsourceConstruction = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left Content */}
             <div>
-              <h2 
+              <h2
                 className="text-3xl lg:text-4xl font-bold mb-6"
                 style={{ fontFamily: "trap, Poppins, system-ui, sans-serif", color: "#171717" }}
               >
@@ -280,7 +280,7 @@ const OutsourceConstruction = () => {
                 Submit Your Scope to Get Started.
               </p>
               <Link
-                to="/contact-us"
+                to="/contact-us/"
                 className="inline-flex items-center justify-center gap-2 rounded-full bg-[#f2572b] px-8 py-4 text-white font-medium hover:bg-[#e04a1f] transition-colors"
               >
                 Start Now
@@ -317,7 +317,7 @@ const OutsourceConstruction = () => {
       </section>
 
       {/* Our Clients Section */}
-      <section 
+      <section
         className="bg-[#f2572b] py-16 lg:py-20 relative overflow-hidden"
         style={{
           backgroundImage: 'url(https://ezybuilds.com/wp-content/uploads/2025/03/plan-2.webp)',
@@ -327,9 +327,16 @@ const OutsourceConstruction = () => {
         }}
       >
         <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
-          <div className="grid lg:grid-cols-2 gap-12 items-start">
+          <div className="grid lg:grid-cols-3 gap-12 items-center">
+            <div className="flex items-center justify-center">
+              <img
+                src="/11.png"
+                alt="Construction Professional"
+                className="w-full h-auto object-contain max-h-[400px]"
+              />
+            </div>
             <div>
-              <h2 
+              <h2
                 className="text-3xl lg:text-4xl font-semibold text-white mb-4"
                 style={{ fontFamily: "trap, Poppins, system-ui, sans-serif" }}
               >
@@ -339,7 +346,7 @@ const OutsourceConstruction = () => {
                 Our primary customers are from the AEC industry and include:
               </p>
             </div>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div className="grid grid-cols-2 gap-4">
               {clients.map((client, index) => {
                 const Icon = client.icon;
                 return (
@@ -359,7 +366,7 @@ const OutsourceConstruction = () => {
       {/* Testimonials Section */}
       <section className="bg-[#171717] py-16 lg:py-20">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <h2 
+          <h2
             className="text-3xl lg:text-4xl font-bold text-white mb-12 text-center"
             style={{ fontFamily: "trap, Poppins, system-ui, sans-serif" }}
           >
@@ -390,11 +397,11 @@ const OutsourceConstruction = () => {
       {/* FAQ Section */}
       <section className="bg-white py-16 lg:py-20">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <h2 
+          <h2
             className="text-3xl lg:text-4xl font-bold mb-12 text-center"
-            style={{ 
+            style={{
               fontFamily: "trap, Poppins, system-ui, sans-serif",
-              color: "#171717" 
+              color: "#171717"
             }}
           >
             Frequently Asked Questions
@@ -409,9 +416,9 @@ const OutsourceConstruction = () => {
                     onClick={() => setOpenFaq(openFaq === index ? null : index)}
                     className="w-full px-6 py-5 text-left flex justify-between items-center hover:bg-gray-50 transition-colors"
                   >
-                    <h3 
+                    <h3
                       className="text-lg font-semibold pr-4"
-                      style={{ 
+                      style={{
                         fontFamily: "trap, Poppins, system-ui, sans-serif",
                         color: "#171717"
                       }}
@@ -426,12 +433,12 @@ const OutsourceConstruction = () => {
                       )}
                     </div>
                   </button>
-                  
+
                   {openFaq === index && (
                     <div className="px-6 pb-5 border-t border-gray-200">
-                      <p 
+                      <p
                         className="leading-relaxed pt-4"
-                        style={{ 
+                        style={{
                           fontFamily: "Poppins, system-ui, sans-serif",
                           fontSize: "15px",
                           lineHeight: "24px",
@@ -449,19 +456,19 @@ const OutsourceConstruction = () => {
             {/* Right Column - Contact Form */}
             <div className="bg-white rounded-2xl p-8 shadow-xl border-2 border-[#f2572b]/20">
               <div className="mb-6">
-                <h3 
+                <h3
                   className="text-2xl font-bold mb-2"
-                  style={{ 
+                  style={{
                     fontFamily: "trap, Poppins, system-ui, sans-serif",
-                    color: "#171717" 
+                    color: "#171717"
                   }}
                 >
                   Call Us <span className="text-[#f2572b]">Right Now</span>
                 </h3>
-                <p 
-                  style={{ 
+                <p
+                  style={{
                     fontFamily: "Poppins, system-ui, sans-serif",
-                    color: "#171717" 
+                    color: "#171717"
                   }}
                 >
                   Get instant consultation without any cost.

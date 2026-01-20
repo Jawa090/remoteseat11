@@ -24,7 +24,7 @@ const OutperformSection = () => {
   ];
 
   return (
-    <section className="relative overflow-hidden bg-[#dbd4ce] py-24 lg:py-32">
+    <section className="relative overflow-hidden bg-[#dbd4ce] py-6 lg:py-20">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="grid items-center gap-12 lg:grid-cols-2">
           {/* Left Side - Image */}
@@ -126,12 +126,12 @@ const OutperformSection = () => {
             {/* CTA Button */}
             <div className="mt-8 flex justify-center lg:justify-start">
               <Link
-                to="/contact-us"
+                to="/contact-us/"
                 className="relative inline-flex items-center justify-center rounded-full bg-[#f2572b] px-[30px] py-[16px] text-white hover:bg-[#e04a1f] transition-colors overflow-hidden shadow-lg"
                 style={{ fontFamily: "Poppins, system-ui, sans-serif", fontSize: "14px", fontWeight: 500 }}
               >
                 <div className="absolute inset-0 rounded-full bg-gradient-to-b from-white/50 via-white/20 to-transparent" style={{ height: '60%' }}></div>
-                <div className="absolute inset-0 rounded-full" style={{ 
+                <div className="absolute inset-0 rounded-full" style={{
                   background: 'linear-gradient(180deg, rgba(255,255,255,0.4) 0%, rgba(255,255,255,0.1) 40%, transparent 60%)',
                   boxShadow: 'inset 0 1px 2px rgba(255,255,255,0.5)'
                 }}></div>

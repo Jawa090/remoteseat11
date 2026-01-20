@@ -27,7 +27,7 @@ const ArchitecturalVisualizationSection = () => {
             & <span className="text-[#f2572b]">Estimating Renderings</span>
           </h2>
         </div>
-        <p className="max-w-[280px] text-sm text-gray-300 md:mt-2">
+        <p className="max-w-[320px] text-md text-gray-300 md:mt-2">
           Trusted by contractors for precise 3D models with material takeoffs and bid-ready photorealistic renders.
         </p>
       </div>

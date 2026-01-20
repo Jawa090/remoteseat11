@@ -205,7 +205,7 @@ const ConstructionEstimator = () => {
   return (
     <div className="min-h-screen bg-white">
       <Header />
-      
+
       {/* Hero Section with Calendar */}
       <section className="bg-[#171717] py-16 lg:py-28 relative overflow-hidden">
         <div className="absolute inset-0 opacity-5">
@@ -215,23 +215,23 @@ const ConstructionEstimator = () => {
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start">
             {/* Left Content */}
             <div className="flex flex-col">
-              <h1 
+              <h1
                 className="text-3xl lg:text-5xl xl:text-6xl font-semibold text-white leading-tight mb-6"
                 style={{ fontFamily: "trap, Poppins, system-ui, sans-serif" }}
               >
                 Hire Offshore <span className="text-[#f2572b]">Construction Cost Estimators</span>
               </h1>
-              <p 
+              <p
                 className="text-white/90 text-base lg:text-lg leading-relaxed mb-8"
                 style={{ fontFamily: "Poppins, system-ui, sans-serif" }}
               >
                 Access top-tier construction cost estimators trained in US standards. Get accurate quantity takeoffs, detailed cost estimates, and professional bid preparation at a fraction of local costs. Save up to 70% while working with pre-vetted professionals.
               </p>
-              
+
               {/* Mobile Button */}
               <div className="lg:hidden">
                 <Link
-                  to="/contact-us"
+                  to="/contact-us/"
                   className="inline-flex items-center justify-center w-full gap-2 rounded-full bg-[#f2572b] px-6 py-3 text-white font-medium hover:bg-[#e04a1f] transition-colors"
                 >
                   Get Started Today
@@ -261,19 +261,19 @@ const ConstructionEstimator = () => {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="bg-[#dbd4ce] rounded-2xl px-8 py-6 shadow-xl border-2 border-[#f2572b]/20">
             <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
-              <h2 
+              <h2
                 className="text-[18px] lg:text-[20px] font-semibold"
-                style={{ 
+                style={{
                   fontFamily: "trap, Poppins, system-ui, sans-serif",
-                  color: "#171717" 
+                  color: "#171717"
                 }}
               >
                 Build Your Offshore Estimating Team Today
               </h2>
-              
+
               <div className="flex flex-col sm:flex-row sm:items-center gap-3">
                 <Link
-                  to="/contact-us"
+                  to="/contact-us/"
                   className="inline-flex items-center justify-center gap-2 rounded-full bg-[#2F80ED] px-5 py-2.5 text-sm font-medium text-white shadow-sm hover:bg-[#256bd0] transition-colors"
                 >
                   <svg xmlns="http://www.w3.org/2000/svg" width="25" height="15" viewBox="0 0 25 15" fill="none" aria-hidden="true">
@@ -303,7 +303,7 @@ const ConstructionEstimator = () => {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             <div>
-              <h2 
+              <h2
                 className="text-3xl lg:text-4xl font-semibold text-[#171717] mb-4"
                 style={{ fontFamily: "trap, Poppins, system-ui, sans-serif" }}
               >
@@ -336,7 +336,7 @@ const ConstructionEstimator = () => {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             <div>
-              <h2 
+              <h2
                 className="text-3xl lg:text-4xl font-semibold text-white mb-4"
                 style={{ fontFamily: "trap, Poppins, system-ui, sans-serif" }}
               >
@@ -360,7 +360,7 @@ const ConstructionEstimator = () => {
       {/* What Your Estimators Can Handle Section */}
       <section className="bg-white py-16 lg:py-20 relative overflow-hidden">
         {/* Background Image with low opacity */}
-        <div 
+        <div
           className="absolute inset-0 opacity-[0.03]"
           style={{
             backgroundImage: 'url(https://ezybuilds.com/wp-content/uploads/2025/03/hero-blueprint.webp)',
@@ -370,7 +370,7 @@ const ConstructionEstimator = () => {
           }}
         ></div>
         <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
-          <h2 
+          <h2
             className="text-3xl lg:text-4xl font-semibold text-[#171717] mb-12 text-center"
             style={{ fontFamily: "trap, Poppins, system-ui, sans-serif" }}
           >
@@ -396,7 +396,7 @@ const ConstructionEstimator = () => {
       {/* CSI Divisions Section */}
       <section className="bg-[#f2572b] py-16 lg:py-20">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <h2 
+          <h2
             className="text-3xl lg:text-4xl font-semibold text-white mb-12 text-center"
             style={{ fontFamily: "trap, Poppins, system-ui, sans-serif" }}
           >
@@ -425,14 +425,14 @@ const ConstructionEstimator = () => {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 
+              <h2
                 className="text-3xl lg:text-4xl font-semibold text-[#171717] mb-6"
                 style={{ fontFamily: "trap, Poppins, system-ui, sans-serif" }}
               >
                 How to Hire Your Offshore Construction Estimator
               </h2>
               <Link
-                to="/contact-us"
+                to="/contact-us/"
                 className="inline-flex items-center justify-center gap-2 rounded-full bg-[#f2572b] px-8 py-4 text-white font-medium hover:bg-[#e04a1f] transition-colors"
               >
                 Get a Free Quote
@@ -466,7 +466,7 @@ const ConstructionEstimator = () => {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 
+              <h2
                 className="text-3xl lg:text-4xl font-semibold text-white mb-6"
                 style={{ fontFamily: "trap, Poppins, system-ui, sans-serif" }}
               >
@@ -476,7 +476,7 @@ const ConstructionEstimator = () => {
                 Our offshore estimators work as dedicated members of your team, fully integrated into your workflows and processes. They understand your business, your standards, and your expectations, delivering consistent, high-quality estimates that help you win more projects and stay on budget.
               </p>
               <Link
-                to="/contact-us"
+                to="/contact-us/"
                 className="inline-flex items-center justify-center gap-2 rounded-full bg-[#f2572b] px-8 py-4 text-white font-medium hover:bg-[#e04a1f] transition-colors"
               >
                 Schedule a Free Consultation
@@ -484,7 +484,7 @@ const ConstructionEstimator = () => {
               </Link>
             </div>
             <div className="relative">
-              <img 
+              <img
                 src="https://ezybuilds.com/wp-content/uploads/2025/03/cheerful-african-american-architect-holding-bluepr-2024-11-17-17-04-27-utc-1-1.webp"
                 alt="Construction estimator with blueprints"
                 className="w-full h-auto rounded-2xl"
@@ -499,7 +499,7 @@ const ConstructionEstimator = () => {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             <div>
-              <h2 
+              <h2
                 className="text-3xl lg:text-4xl font-semibold text-white mb-4"
                 style={{ fontFamily: "trap, Poppins, system-ui, sans-serif" }}
               >
@@ -523,7 +523,7 @@ const ConstructionEstimator = () => {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             <div className="lg:max-w-md">
-              <h2 
+              <h2
                 className="text-3xl lg:text-4xl font-semibold text-[#171717] mb-4"
                 style={{ fontFamily: "trap, Poppins, system-ui, sans-serif" }}
               >
@@ -541,7 +541,7 @@ const ConstructionEstimator = () => {
                     <span className="text-2xl font-bold text-[#f2572b]">{cost.percentage}%</span>
                   </div>
                   <div className="w-full bg-gray-200 rounded-full h-3 mb-4">
-                    <div 
+                    <div
                       className="bg-[#f2572b] h-3 rounded-full transition-all duration-500"
                       style={{ width: `${cost.percentage}%` }}
                     ></div>
@@ -564,7 +564,7 @@ const ConstructionEstimator = () => {
       {/* Other AEC Roles Section */}
       <section className="bg-[#171717] py-16 lg:py-20">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <h2 
+          <h2
             className="text-3xl lg:text-4xl font-semibold text-white mb-12 text-center"
             style={{ fontFamily: "trap, Poppins, system-ui, sans-serif" }}
           >
@@ -573,10 +573,13 @@ const ConstructionEstimator = () => {
           <div className="grid md:grid-cols-3 gap-6">
             {otherAECRoles.map((role, index) => (
               <div key={index} className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl overflow-hidden hover:bg-white/20 transition-colors">
-                <div className="h-48 bg-gray-800 relative">
-                  <div className="absolute inset-0 flex items-center justify-center text-white/50 text-sm">
-                    {role.title}
-                  </div>
+                <div className="h-48 bg-gray-800 relative group">
+                  <img
+                    src={role.image}
+                    alt={role.title}
+                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-black/40"></div>
                 </div>
                 <div className="p-6">
                   <h3 className="text-lg font-semibold text-white mb-2">{role.title}</h3>
@@ -592,11 +595,11 @@ const ConstructionEstimator = () => {
       <section className="bg-white py-16 lg:py-20">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 
+            <h2
               className="text-3xl lg:text-4xl font-bold"
-              style={{ 
+              style={{
                 fontFamily: "trap, Poppins, system-ui, sans-serif",
-                color: "#171717" 
+                color: "#171717"
               }}
             >
               FAQs About Hiring Offshore Construction Estimators
@@ -612,9 +615,9 @@ const ConstructionEstimator = () => {
                     onClick={() => setOpenFaq(openFaq === index ? null : index)}
                     className="w-full px-6 py-5 text-left flex justify-between items-center hover:bg-[#f2572b]/5 transition-colors"
                   >
-                    <h3 
+                    <h3
                       className="text-lg font-semibold pr-4"
-                      style={{ 
+                      style={{
                         fontFamily: "trap, Poppins, system-ui, sans-serif",
                         color: "#171717"
                       }}
@@ -629,12 +632,12 @@ const ConstructionEstimator = () => {
                       )}
                     </div>
                   </button>
-                  
+
                   {openFaq === index && (
                     <div className="px-6 pb-5 border-t border-[#f2572b]/10">
-                      <p 
+                      <p
                         className="leading-relaxed pt-4"
-                        style={{ 
+                        style={{
                           fontFamily: "Poppins, system-ui, sans-serif",
                           fontSize: "15px",
                           lineHeight: "24px",
@@ -652,19 +655,19 @@ const ConstructionEstimator = () => {
             {/* Right Column - Contact Form */}
             <div className="bg-white rounded-2xl p-8 shadow-xl border-2 border-[#f2572b]/20">
               <div className="mb-6">
-                <h3 
+                <h3
                   className="text-2xl font-bold mb-2"
-                  style={{ 
+                  style={{
                     fontFamily: "trap, Poppins, system-ui, sans-serif",
-                    color: "#171717" 
+                    color: "#171717"
                   }}
                 >
                   Call Us <span className="text-[#f2572b]">Right Now</span>
                 </h3>
-                <p 
-                  style={{ 
+                <p
+                  style={{
                     fontFamily: "Poppins, system-ui, sans-serif",
-                    color: "#171717" 
+                    color: "#171717"
                   }}
                 >
                   Get instant consultation without any cost.

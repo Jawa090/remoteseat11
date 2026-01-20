@@ -52,14 +52,14 @@ const BlogSection = () => {
         {/* Blog Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           {blogPosts.map((post) => (
-            <article 
-              key={post.id} 
+            <article
+              key={post.id}
               className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 group cursor-pointer"
             >
               {/* Image */}
-              <Link to={`/blogs/${post.slug}`} className="block relative overflow-hidden">
-                <img 
-                  src={post.image} 
+              <Link to={`/blogs/${post.slug}/`} className="block relative overflow-hidden">
+                <img
+                  src={post.image}
                   alt={post.title}
                   className="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500"
                 />
@@ -88,7 +88,7 @@ const BlogSection = () => {
                 </div>
 
                 {/* Title */}
-                <Link to={`/blogs/${post.slug}`}>
+                <Link to={`/blogs/${post.slug}/`}>
                   <h3 className="text-xl font-bold text-gray-900 mb-3 line-clamp-2 group-hover:text-orange-500 transition-colors">
                     {post.title}
                   </h3>
@@ -100,8 +100,8 @@ const BlogSection = () => {
                 </p>
 
                 {/* Read More */}
-                <Link 
-                  to={`/blogs/${post.slug}`}
+                <Link
+                  to={`/blogs/${post.slug}/`}
                   className="inline-flex items-center text-orange-500 font-medium hover:text-orange-600 transition-colors group"
                 >
                   Read More
@@ -114,8 +114,8 @@ const BlogSection = () => {
 
         {/* View All Button */}
         <div className="text-center">
-          <Link 
-            to="/blogs"
+          <Link
+            to="/blogs/"
             className="inline-flex items-center bg-gradient-to-r from-orange-500 to-red-500 text-white px-8 py-4 rounded-full font-semibold text-lg hover:from-orange-600 hover:to-red-600 transition-all transform hover:scale-105 shadow-lg"
           >
             View All Articles

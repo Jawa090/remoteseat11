@@ -62,7 +62,7 @@ const Blogs = () => {
                   key={post.id}
                   className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 group"
                 >
-                  <Link to={`/blogs/${post.slug}`} className="block relative overflow-hidden">
+                  <Link to={`/blogs/${post.slug}/`} className="block relative overflow-hidden">
                     <img
                       src={post.image}
                       alt={post.title}
@@ -91,7 +91,7 @@ const Blogs = () => {
                       <span className="text-orange-500 font-medium">{post.category}</span>
                     </div>
 
-                    <Link to={`/blogs/${post.slug}`}>
+                    <Link to={`/blogs/${post.slug}/`}>
                       <h2 className="text-xl font-bold text-gray-900 mb-3 line-clamp-2 group-hover:text-orange-500 transition-colors">
                         {post.title}
                       </h2>
@@ -100,7 +100,7 @@ const Blogs = () => {
                     <p className="text-gray-600 mb-4 line-clamp-3">{post.excerpt}</p>
 
                     <Link
-                      to={`/blogs/${post.slug}`}
+                      to={`/blogs/${post.slug}/`}
                       className="inline-flex items-center text-orange-500 font-medium hover:text-orange-600 transition-colors group"
                     >
                       Read More

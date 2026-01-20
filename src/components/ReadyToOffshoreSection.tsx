@@ -155,10 +155,10 @@ const ReadyToOffshoreSection = () => {
       }
     `;
     document.head.appendChild(style);
-    
+
     // Simulate image loading
     const timer = setTimeout(() => setIsLoaded(true), 100);
-    
+
     return () => {
       clearTimeout(timer);
       document.head.removeChild(style);
@@ -168,7 +168,7 @@ const ReadyToOffshoreSection = () => {
   return (
     <section className="hero-section">
       <div className="hero-blueprint"></div>
-      
+
       <div className="max-w-7xl mx-auto">
         <div className="hero-content">
           {/* Left Column - Text Content */}
@@ -179,9 +179,9 @@ const ReadyToOffshoreSection = () => {
             <p className="hero-subtext">
               Book a free consultation to explore offshore staffing tailored to your budget and deadlines.
             </p>
-            
+
             <div className="hero-cta">
-              <a href="/contact-us" className="cta-button">
+              <a href="/contact-us/" className="cta-button">
                 Get Your Free Consultation
                 <ArrowRight size={20} />
               </a>
@@ -191,8 +191,8 @@ const ReadyToOffshoreSection = () => {
           {/* Right Column - Person Image */}
           <div className="hero-image">
             <div className="hero-image-container">
-              <img 
-                src="/src/assets/images/ready-to-offshore-person.png" 
+              <img
+                src="/src/assets/images/ready-to-offshore-person.png"
                 alt="Ready to offshore AEC professional"
                 loading="lazy"
               />
@@ -200,8 +200,8 @@ const ReadyToOffshoreSection = () => {
           </div>
         </div>
       </div>
-      </section>
-    );
+    </section>
+  );
 };
 
 export default ReadyToOffshoreSection;

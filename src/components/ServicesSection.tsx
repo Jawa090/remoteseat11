@@ -7,13 +7,13 @@ const ServicesSection = () => {
       icon: <Users className="w-12 h-12" />,
       title: "Hire Offshore BIM Technicians & 3D Modelers",
       description: "Bring BIM & 3D modeling expertise on board through our offshore staffing agency. Highly skilled remote professionals at a fraction of local cost to support your project delivery and also help you attract more high-ticket clients.",
-      link: "/hire-offshore-bim-technicians"
+      link: "/hire-offshore-bim-technicians/"
     },
     {
       icon: <Calculator className="w-12 h-12" />,
       title: "Hire Offshore Estimators & Project Support Staff",
       description: "Scale your AEC team with estimators and project support specialists. Our offshore staffing agency delivers vetted talent who understand US construction standards.",
-      link: "/hire-offshore-construction-cost-estimators"
+      link: "/hire-offshore-construction-cost-estimators/"
     }
   ];
 
@@ -40,12 +40,12 @@ const ServicesSection = () => {
     {
       title: "Offshore Staffing for Any AEC Talent",
       description: "Hire remote AEC professionals from estimators and architects to BIM, drafting, engineering, and project support. Build and grow your team flexibly, without long-term commitments.",
-      link: "/outsource-architecture-construction-staffing"
+      link: "/outsource-architecture-construction-staffing/"
     },
     {
       title: "Outsource AEC Projects End to End",
       description: "Delegate entire projects, design, drafting, BIM, MEP coordination, modeling, estimation, or more to our offshore experts. We handle delivery, quality, and deadlines.",
-      link: "/outsource-3d-architectural-rendering-bim-cad"
+      link: "/outsource-3d-architectural-rendering-bim-cad/"
     }
   ];
 
@@ -59,7 +59,7 @@ const ServicesSection = () => {
             <span className="bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent"> Offshore AEC Experts</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-4xl mx-auto">
-            Think of us as a flexible extension of your team, ensuring your project's success from blueprint to reality. 
+            Think of us as a flexible extension of your team, ensuring your project's success from blueprint to reality.
             Access US-standard talent without hiring locally and save thousands on salaries, benefits, and training.
           </p>
         </div>
@@ -73,16 +73,16 @@ const ServicesSection = () => {
                   {service.icon}
                 </div>
               </div>
-              
+
               <h3 className="text-2xl font-bold text-gray-900 mb-4">
                 {service.title}
               </h3>
-              
+
               <p className="text-gray-600 mb-6 leading-relaxed">
                 {service.description}
               </p>
-              
-              <Link 
+
+              <Link
                 to={service.link}
                 className="inline-flex items-center text-orange-500 font-semibold hover:text-orange-600 transition-colors"
               >
@@ -107,10 +107,10 @@ const ServicesSection = () => {
               </div>
             ))}
           </div>
-          
+
           <div className="text-center mt-8">
-            <Link 
-              to="/contact-us"
+            <Link
+              to="/contact-us/"
               className="inline-flex items-center bg-gradient-to-r from-orange-500 to-red-500 text-white px-8 py-4 rounded-full font-semibold text-lg hover:from-orange-600 hover:to-red-600 transition-all transform hover:scale-105 shadow-lg"
             >
               Get Your Free Consultation
@@ -128,7 +128,7 @@ const ServicesSection = () => {
               Can Help You
             </h3>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto">
-              Partner with 100+ AEC specialists in design, drafting, BIM, cost estimation, and project management. 
+              Partner with 100+ AEC specialists in design, drafting, BIM, cost estimation, and project management.
               Trained in US standards, fluent in English, and available at 70% lower costs.
             </p>
           </div>
@@ -139,12 +139,12 @@ const ServicesSection = () => {
                 <h4 className="text-2xl font-bold text-gray-900 mb-4">
                   {solution.title}
                 </h4>
-                
+
                 <p className="text-gray-600 mb-6 leading-relaxed">
                   {solution.description}
                 </p>
-                
-                <Link 
+
+                <Link
                   to={solution.link}
                   className="inline-flex items-center text-orange-500 font-semibold hover:text-orange-600 transition-colors"
                 >

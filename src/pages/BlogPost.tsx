@@ -299,7 +299,7 @@ const BlogPost = () => {
             <div className="max-w-4xl mx-auto px-6 lg:px-8">
               <h1 className="text-3xl font-bold text-gray-900">Post not found</h1>
               <div className="mt-6">
-                <Link to="/blogs" className="text-orange-600 font-semibold hover:text-orange-700">
+                <Link to="/blogs/" className="text-orange-600 font-semibold hover:text-orange-700">
                   Back to Blogs
                 </Link>
               </div>
@@ -495,11 +495,14 @@ const BlogPost = () => {
                   );
                 }
 
-                return (
-                  <p key={idx} className="mt-4 text-[16px] leading-[1.8] text-gray-700">
-                    {block.text}
-                  </p>
-                );
+                if (block.type === "p") {
+                  return (
+                    <p key={idx} className="mt-4 text-[16px] leading-[1.8] text-gray-700">
+                      {block.text}
+                    </p>
+                  );
+                }
+                return null;
               })}
             </article>
 
@@ -630,7 +633,7 @@ const BlogPost = () => {
                     key={p.slug}
                     className="rounded-[12px] border border-[#E3E3E3] bg-white p-4 shadow-[0px_0px_28px_0px_rgba(0,0,0,0.03)]"
                   >
-                    <Link to={`/blogs/${p.slug}`} className="block overflow-hidden rounded-[12px]">
+                    <Link to={`/blogs/${p.slug}/`} className="block overflow-hidden rounded-[12px]">
                       <img
                         src={p.image}
                         alt={p.title}
@@ -647,7 +650,7 @@ const BlogPost = () => {
                       <span>{p.readTime}</span>
                     </div>
 
-                    <Link to={`/blogs/${p.slug}`} className="block">
+                    <Link to={`/blogs/${p.slug}/`} className="block">
                       <h3 className="mt-3 text-[20px] font-semibold leading-snug text-[#2F1C6A]">
                         {p.title}
                       </h3>
@@ -659,7 +662,7 @@ const BlogPost = () => {
               </div>
 
               <div className="mt-10">
-                <Link to="/blogs" className="text-orange-600 font-semibold hover:text-orange-700">
+                <Link to="/blogs/" className="text-orange-600 font-semibold hover:text-orange-700">
                   View all
                 </Link>
               </div>

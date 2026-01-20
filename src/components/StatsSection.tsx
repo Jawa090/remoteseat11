@@ -44,9 +44,9 @@ const StatsSection = () => {
               ))}
             </div>
 
-            <Link to="/contact-us">
-              <Button 
-                size="lg" 
+            <Link to="/contact-us/">
+              <Button
+                size="lg"
                 className="bg-gradient-to-r from-orange-500 to-red-500 text-white hover:from-orange-600 hover:to-red-600 transition-all px-8 py-4 text-lg font-medium rounded-full"
               >
                 Get Your Free Consultation

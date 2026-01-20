@@ -73,7 +73,7 @@ const TestimonialsSection = () => {
   }, [api, isPaused, rotateLeft]);
 
   return (
-    <section className="bg-[#171717] py-24 lg:py-32 relative overflow-hidden">
+    <section className="bg-[#171717] py-18 lg:py-24 relative overflow-hidden">
       {/* Decorative background elements */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-20 left-10 w-72 h-72 bg-[#f2572b] rounded-full blur-3xl"></div>

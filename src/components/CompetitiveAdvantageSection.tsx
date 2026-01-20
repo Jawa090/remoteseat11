@@ -39,7 +39,7 @@ const CompetitiveAdvantageSection = () => {
                 </div>
                 <p className="text-sm text-gray-400 leading-relaxed">Savings compared to hiring a US-based professional.</p>
               </div>
-              
+
               <div className="space-y-2">
                 <div className="flex items-baseline gap-1">
                   <span className="text-3xl lg:text-4xl font-bold text-orange-400">
@@ -48,7 +48,7 @@ const CompetitiveAdvantageSection = () => {
                 </div>
                 <p className="text-sm text-gray-400 leading-relaxed">Every resource is college-educated, US-trained, rigorously tested.</p>
               </div>
-              
+
               <div className="space-y-2">
                 <div className="flex items-baseline gap-1">
                   <span className="text-3xl lg:text-4xl font-bold text-orange-400">
@@ -60,7 +60,7 @@ const CompetitiveAdvantageSection = () => {
                 </div>
                 <p className="text-sm text-gray-400 leading-relaxed">Recruitment, payroll, and compliance handled.</p>
               </div>
-              
+
               <div className="space-y-2">
                 <div className="flex items-baseline gap-1">
                   <span className="text-3xl lg:text-4xl font-bold text-orange-400">
@@ -74,8 +74,8 @@ const CompetitiveAdvantageSection = () => {
               </div>
             </div>
 
-            <Link to="/contact-us">
-              <button 
+            <Link to="/contact-us/">
+              <button
                 className="inline-flex items-center justify-center rounded-[60px] bg-[#C95B4A] px-[30px] py-[16px] text-white hover:bg-[#B84A3A] transition-colors"
                 style={{ fontFamily: "Poppins, system-ui, sans-serif", fontSize: "14px", fontWeight: 500 }}
               >

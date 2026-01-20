@@ -106,7 +106,7 @@ const CADDrafter = () => {
   return (
     <div className="min-h-screen bg-white">
       <Header />
-      
+
       {/* Hero Section with Calendar */}
       <section className="bg-[#171717] py-16 lg:py-28 relative overflow-hidden">
         <div className="absolute inset-0 opacity-5">
@@ -116,19 +116,19 @@ const CADDrafter = () => {
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start">
             {/* Left Content */}
             <div className="flex flex-col">
-              <h1 
+              <h1
                 className="text-3xl lg:text-5xl xl:text-6xl font-semibold text-white leading-tight mb-6"
                 style={{ fontFamily: "trap, Poppins, system-ui, sans-serif" }}
               >
                 Hire Offshore <span className="text-[#f2572b]">CAD Drafters</span> to Scale Your Design & Construction Teams
               </h1>
-              <p 
+              <p
                 className="text-white/90 text-base lg:text-lg leading-relaxed mb-8"
                 style={{ fontFamily: "Poppins, system-ui, sans-serif" }}
               >
                 Cut hiring costs by up to 70% while working with dedicated, US-experienced CAD drafters who provide accurate drafting and modeling support full-time/part-time.
               </p>
-              
+
               {/* Consultation Prompt */}
               <div className="mb-6">
                 <p className="text-white/80 text-base mb-4">
@@ -136,7 +136,7 @@ const CADDrafter = () => {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3">
                   <Link
-                    to="/contact-us"
+                    to="/contact-us/"
                     className="inline-flex items-center justify-center gap-2 rounded-full bg-[#2F80ED] px-5 py-2.5 text-sm font-medium text-white shadow-sm hover:bg-[#256bd0] transition-colors"
                   >
                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="15" viewBox="0 0 25 15" fill="none" aria-hidden="true">
@@ -180,7 +180,7 @@ const CADDrafter = () => {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-start mb-12">
             <div>
-              <h2 
+              <h2
                 className="text-3xl lg:text-4xl font-semibold text-white mb-4"
                 style={{ fontFamily: "trap, Poppins, system-ui, sans-serif" }}
               >
@@ -216,7 +216,7 @@ const CADDrafter = () => {
           {/* CTA Button */}
           <div className="text-center mb-12">
             <Link
-              to="/contact-us"
+              to="/contact-us/"
               className="inline-flex items-center justify-center gap-2 rounded-full bg-[#f2572b] px-8 py-4 text-white font-medium hover:bg-[#e04a1f] transition-colors"
             >
               Get Your Free Consultation
@@ -228,6 +228,7 @@ const CADDrafter = () => {
           <div className="grid md:grid-cols-2 gap-6">
             <div className="relative rounded-2xl overflow-hidden group cursor-pointer">
               <div className="aspect-[4/3] bg-gray-800 relative">
+                <img src="/13.png" alt="2D & 3D Drafting" className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
                 <div className="absolute bottom-6 left-6 right-6">
                   <h3 className="text-2xl font-semibold text-white mb-2">2D & 3D Drafting</h3>
@@ -237,6 +238,7 @@ const CADDrafter = () => {
             </div>
             <div className="relative rounded-2xl overflow-hidden group cursor-pointer">
               <div className="aspect-[4/3] bg-gray-800 relative">
+                <img src="/14.png" alt="3D Renders" className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
                 <div className="absolute bottom-6 left-6 right-6">
                   <h3 className="text-2xl font-semibold text-white mb-2">3D Renders</h3>
@@ -253,7 +255,7 @@ const CADDrafter = () => {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             <div>
-              <h2 
+              <h2
                 className="text-3xl lg:text-4xl font-semibold text-white mb-4"
                 style={{ fontFamily: "trap, Poppins, system-ui, sans-serif" }}
               >
@@ -279,7 +281,7 @@ const CADDrafter = () => {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-start mb-12">
             <div>
-              <h2 
+              <h2
                 className="text-3xl lg:text-4xl font-semibold text-white mb-4"
                 style={{ fontFamily: "trap, Poppins, system-ui, sans-serif" }}
               >
@@ -296,9 +298,10 @@ const CADDrafter = () => {
           <div className="grid md:grid-cols-3 gap-6">
             {disciplines.map((discipline, index) => (
               <div key={index} className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl overflow-hidden hover:bg-white/20 transition-colors">
-                <div className="aspect-[4/3] bg-gray-800 relative">
+                <div className="aspect-[4/3] bg-gray-800 relative group">
+                  <img src={discipline.image} alt={discipline.title} className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                  <div className="absolute bottom-4 left-4 right-4">
+                  <div className="absolute bottom-4 left-4 right-4 z-10">
                     <h3 className="text-lg font-semibold text-white">{discipline.title}</h3>
                   </div>
                 </div>
@@ -316,14 +319,14 @@ const CADDrafter = () => {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="relative">
-              <img 
+              <img
                 src="https://ezybuilds.com/wp-content/uploads/2025/03/3d-rendering-isometric-house-model-1.webp"
                 alt="3D isometric building rendering"
                 className="w-full h-auto rounded-2xl"
               />
             </div>
             <div>
-              <h2 
+              <h2
                 className="text-3xl lg:text-4xl font-semibold text-white mb-6"
                 style={{ fontFamily: "trap, Poppins, system-ui, sans-serif" }}
               >
@@ -333,7 +336,7 @@ const CADDrafter = () => {
                 68% of top US construction and architecture firms now leverage offshore talent to reduce costs and meet deadlines. At remoteseat, access the top 1% of AEC professionals with direct US project experience. Your competitors are already scaling smarter; don't get left behind.
               </p>
               <Link
-                to="/contact-us"
+                to="/contact-us/"
                 className="inline-flex items-center justify-center gap-2 rounded-full bg-[#f2572b] px-8 py-4 text-white font-medium hover:bg-[#e04a1f] transition-colors"
               >
                 Get Your Free Consultation
@@ -350,7 +353,7 @@ const CADDrafter = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left Content - Steps */}
             <div>
-              <h2 
+              <h2
                 className="text-3xl lg:text-4xl font-semibold text-[#171717] mb-8"
                 style={{ fontFamily: "trap, Poppins, system-ui, sans-serif" }}
               >
@@ -401,7 +404,7 @@ const CADDrafter = () => {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 
+              <h2
                 className="text-3xl lg:text-4xl font-semibold text-white mb-6"
                 style={{ fontFamily: "trap, Poppins, system-ui, sans-serif" }}
               >
@@ -411,7 +414,7 @@ const CADDrafter = () => {
                 Book Your Free Consultation Call Today to Get Started!
               </p>
               <Link
-                to="/contact-us"
+                to="/contact-us/"
                 className="inline-flex items-center justify-center gap-2 rounded-full bg-[#f2572b] px-8 py-4 text-white font-medium hover:bg-[#e04a1f] transition-colors"
               >
                 Get Your Free Consultation
@@ -419,7 +422,7 @@ const CADDrafter = () => {
               </Link>
             </div>
             <div className="relative">
-              <img 
+              <img
                 src="https://ezybuilds.com/wp-content/uploads/2025/03/cheerful-african-american-architect-holding-bluepr-2024-11-17-17-04-27-utc-1-1.webp"
                 alt="Professional holding blueprints"
                 className="w-full h-auto rounded-2xl"
@@ -433,11 +436,11 @@ const CADDrafter = () => {
       <section className="bg-[#dbd4ce] py-16 lg:py-20">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 
+            <h2
               className="text-3xl lg:text-4xl font-bold"
-              style={{ 
+              style={{
                 fontFamily: "trap, Poppins, system-ui, sans-serif",
-                color: "#171717" 
+                color: "#171717"
               }}
             >
               Frequently Asked Questions
@@ -453,9 +456,9 @@ const CADDrafter = () => {
                     onClick={() => setOpenFaq(openFaq === index ? null : index)}
                     className="w-full px-6 py-5 text-left flex justify-between items-center hover:bg-[#f2572b]/5 transition-colors"
                   >
-                    <h3 
+                    <h3
                       className="text-lg font-semibold pr-4"
-                      style={{ 
+                      style={{
                         fontFamily: "trap, Poppins, system-ui, sans-serif",
                         color: "#171717"
                       }}
@@ -470,12 +473,12 @@ const CADDrafter = () => {
                       )}
                     </div>
                   </button>
-                  
+
                   {openFaq === index && (
                     <div className="px-6 pb-5 border-t border-[#f2572b]/10">
-                      <p 
+                      <p
                         className="leading-relaxed pt-4"
-                        style={{ 
+                        style={{
                           fontFamily: "Poppins, system-ui, sans-serif",
                           fontSize: "15px",
                           lineHeight: "24px",
@@ -493,19 +496,19 @@ const CADDrafter = () => {
             {/* Right Column - Contact Form */}
             <div className="bg-white rounded-2xl p-8 shadow-xl border-2 border-[#f2572b]/20">
               <div className="mb-6">
-                <h3 
+                <h3
                   className="text-2xl font-bold mb-2"
-                  style={{ 
+                  style={{
                     fontFamily: "trap, Poppins, system-ui, sans-serif",
-                    color: "#171717" 
+                    color: "#171717"
                   }}
                 >
                   Call Us <span className="text-[#f2572b]">Right Now</span>
                 </h3>
-                <p 
-                  style={{ 
+                <p
+                  style={{
                     fontFamily: "Poppins, system-ui, sans-serif",
-                    color: "#171717" 
+                    color: "#171717"
                   }}
                 >
                   Get instant consultation without any cost.

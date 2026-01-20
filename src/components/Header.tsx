@@ -1,7 +1,7 @@
- import { useEffect, useId, useRef, useState } from "react";
- import { Link } from "react-router-dom";
- 
- const Header = () => {
+import { useEffect, useId, useRef, useState } from "react";
+import { Link } from "react-router-dom";
+
+const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [solutionsOpen, setSolutionsOpen] = useState(false);
   const [hireResourcesOpen, setHireResourcesOpen] = useState(false);
@@ -133,7 +133,7 @@
                     >
                       <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-3826">
                         <Link
-                          to="/outsource-architecture-construction-staffing"
+                          to="/outsource-architecture-construction-staffing/"
                           className="elementor-sub-item block px-4 py-2 !text-white hover:!text-[#f2572b] transition-colors"
                         >
                           Extend Your Team
@@ -141,7 +141,7 @@
                       </li>
                       <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-3827">
                         <Link
-                          to="/outsource-3d-architectural-rendering-bim-cad"
+                          to="/outsource-3d-architectural-rendering-bim-cad/"
                           className="elementor-sub-item block px-4 py-2 !text-white hover:!text-[#f2572b] transition-colors"
                         >
                           Get Your Projects Done
@@ -149,7 +149,7 @@
                       </li>
                       <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-4759">
                         <Link
-                          to="/outsource-construction-services"
+                          to="/outsource-construction-services/"
                           className="elementor-sub-item block px-4 py-2 !text-[#f2572b] hover:!text-[#e04a1f] transition-colors text-sm font-medium"
                         >
                           Outsource Projects
@@ -158,58 +158,22 @@
                     </ul>
                   </li>
 
-                  <li
-                    className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3828 relative"
-                    onMouseEnter={openDesktopHireResources}
-                    onMouseLeave={scheduleCloseDesktopHireResources}
-                  >
-                    <a
-                      href="#"
-                      className="elementor-item elementor-item-anchor has-submenu !text-white hover:!text-[#f2572b] transition-colors text-sm font-medium flex items-center gap-1"
-                      id={`sm-${smId}-3`}
-                      aria-haspopup="true"
-                      aria-controls={`sm-${smId}-4`}
-                      aria-expanded={desktopHireResourcesOpen}
-                      onClick={(e) => e.preventDefault()}
+                  <li className="menu-item menu-item-type-post_type menu-item-object-page">
+                    <Link
+                      to="#"
+                      className="elementor-item !text-white hover:!text-[#f2572b] transition-colors text-sm font-medium"
                     >
-                      Hire Resources
-                      <span className="sub-arrow">
-                        <svg
-                          aria-hidden="true"
-                          className="e-font-icon-svg e-fas-caret-down w-3 h-3"
-                          viewBox="0 0 320 512"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="currentColor"
-                        >
-                          <path d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z" />
-                        </svg>
-                      </span>
-                    </a>
-                    <ul
-                      className={`sub-menu elementor-nav-menu--dropdown absolute left-0 top-full mt-0 min-w-[220px] rounded-[12px] bg-[#171717] py-2 shadow-[0px_0px_28px_0px_rgba(0,0,0,0.18)] ${desktopHireResourcesOpen ? "!block" : "!hidden"}`}
-                      id={`sm-${smId}-4`}
-                      role="group"
-                      aria-hidden={!desktopHireResourcesOpen}
-                      aria-labelledby={`sm-${smId}-3`}
-                      aria-expanded={desktopHireResourcesOpen}
+                      About Us
+                    </Link>
+                  </li>
+
+                  <li className="menu-item menu-item-type-post_type menu-item-object-page">
+                    <Link
+                      to="/contact-us/"
+                      className="elementor-item !text-white hover:!text-[#f2572b] transition-colors text-sm font-medium"
                     >
-                      <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-3829">
-                        <Link
-                          to="/hire-offshore-construction-cost-estimators"
-                          className="elementor-sub-item block px-4 py-2 !text-white hover:!text-[#f2572b] transition-colors"
-                        >
-                          Construction Estimator
-                        </Link>
-                      </li>
-                      <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-4034">
-                        <Link
-                          to="/hire-offshore-cad-drafters"
-                          className="elementor-sub-item block px-4 py-2 !text-white hover:!text-[#f2572b] transition-colors"
-                        >
-                          CAD Drafter
-                        </Link>
-                      </li>
-                    </ul>
+                      Contact Us
+                    </Link>
                   </li>
                 </ul>
               </nav>
@@ -219,7 +183,7 @@
           <div className="hidden lg:flex items-center gap-4 min-w-[240px] justify-end">
             <div className="flex items-center gap-3">
               <a
-                href="https://www.facebook.com/ezybuilds.aec"
+                href="#"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-[#171717] flex items-center justify-center hover:bg-[#1f1f1f] transition-colors"
@@ -230,7 +194,7 @@
                 </svg>
               </a>
               <a
-                href="https://www.instagram.com/ezy.builds/"
+                href="#"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-[#171717] flex items-center justify-center hover:bg-[#1f1f1f] transition-colors"
@@ -241,7 +205,7 @@
                 </svg>
               </a>
               <a
-                href="https://www.linkedin.com/company/ezybuilds/"
+                href="#"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-[#171717] flex items-center justify-center hover:bg-[#1f1f1f] transition-colors"
@@ -254,7 +218,7 @@
             </div>
 
             <Link
-              to="/contact-us"
+              to="/contact-us/"
               className="inline-flex items-center justify-center h-10 px-6 rounded-full bg-[#f2572b] text-white font-medium hover:bg-[#e04a1f] transition-colors text-sm"
             >
               Contact Us
@@ -355,7 +319,7 @@
               >
                 <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-3826">
                   <Link
-                    to="/outsource-architecture-construction-staffing"
+                    to="/outsource-architecture-construction-staffing/"
                     className="elementor-sub-item"
                     tabIndex={-1}
                     onClick={() => setMobileMenuOpen(false)}
@@ -365,7 +329,7 @@
                 </li>
                 <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-3827">
                   <Link
-                    to="/outsource-3d-architectural-rendering-bim-cad"
+                    to="/outsource-3d-architectural-rendering-bim-cad/"
                     className="elementor-sub-item"
                     tabIndex={-1}
                     onClick={() => setMobileMenuOpen(false)}
@@ -413,7 +377,7 @@
               >
                 <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-3829">
                   <Link
-                    to="/hire-offshore-construction-cost-estimators"
+                    to="/hire-offshore-construction-cost-estimators/"
                     className="elementor-sub-item"
                     tabIndex={-1}
                     onClick={() => setMobileMenuOpen(false)}
@@ -423,7 +387,7 @@
                 </li>
                 <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-4034">
                   <Link
-                    to="/hire-offshore-cad-drafters"
+                    to="/hire-offshore-cad-drafters/"
                     className="elementor-sub-item"
                     tabIndex={-1}
                     onClick={() => setMobileMenuOpen(false)}
@@ -436,7 +400,7 @@
 
             <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-4759">
               <Link
-                to="/outsource-construction-services"
+                to="/outsource-construction-services/"
                 className="elementor-item"
                 tabIndex={-1}
                 onClick={() => setMobileMenuOpen(false)}
@@ -445,9 +409,20 @@
               </Link>
             </li>
 
+            <li className="menu-item menu-item-type-post_type menu-item-object-page">
+              <Link
+                to="#"
+                className="elementor-item"
+                tabIndex={-1}
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                About Us
+              </Link>
+            </li>
+
             <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-3841">
               <Link
-                to="/contact-us"
+                to="/contact-us/"
                 className="elementor-item"
                 tabIndex={-1}
                 onClick={() => setMobileMenuOpen(false)}
@@ -460,6 +435,6 @@
       </div>
     </header>
   );
- };
+};
 
 export default Header;

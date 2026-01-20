@@ -148,57 +148,24 @@ const PricingSection = () => {
       id: 'pricing_card_estimators',
       title: 'Experienced <br> Cost Estimators',
       image: '/7.png',
-      content: `
-        <div>Offshore Hiring</div>
-        <div class="price"><span style="font-size: 8pt;">From</span> $13/hour</div>
-        <div>Vs.</div>
-        <div>Local Hiring</div>
-        <div>$40/hour</div>
-        <div>Annual Avg. Saving</div>
-        <div class="price">~$57,000</div>
-      `
+   
     },
     {
       id: 'pricing_card_bim',
       title: 'Experienced <br> BIM Specialists',
       image: '/8.png',
-      content: `
-        <div>Offshore Hiring</div>
-        <div class="price"><span style="font-size: 8pt;">From</span> $13/hour</div>
-        <div>Vs.</div>
-        <div>Local Hiring</div>
-        <div>$55/hour</div>
-        <div>Annual Avg. Saving</div>
-        <div class="price">~$87,000</div>
-      `
+   
     },
     {
       id: 'pricing_card_support',
       title: 'Experienced <br> Project Support',
       image: '/9.png',
-      content: `
-        <div>Offshore Hiring</div>
-        <div class="price"><span style="font-size: 8pt;">From</span> $12/hour</div>
-        <div>Vs.</div>
-        <div>Local Hiring</div>
-        <div>$35/hour</div>
-        <div>Annual Avg. Saving</div>
-        <div class="price">~$48,000</div>
-      `
+   
     },
     {
       id: 'pricing_card_coordinators',
       title: 'Experienced <br> Construction Coordinators',
       image: '/10.png',
-      content: `
-        <div>Offshore Hiring</div>
-        <div class="price"><span style="font-size: 8pt;">From</span> $15/hour</div>
-        <div>Vs.</div>
-        <div>Local Hiring</div>
-        <div>$45/hour</div>
-        <div>Annual Avg. Saving</div>
-        <div class="price">~$62,000</div>
-      `
     }
   ];
 

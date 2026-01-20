@@ -5,7 +5,7 @@ import LogoMarquee from "@/components/LogoMarquee";
 import PricingSection from "@/components/PricingSection";
 import ProcessSection from "@/components/ProcessSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
-import BlogSection from "@/components/BlogSection";
+
 import DiscoverSection from "@/components/DiscoverSection";
 import OffshoreHero from "@/components/OffshoreHero";
 import ArchitecturalVisualizationSection from "@/components/ArchitecturalVisualizationSection";
@@ -25,7 +25,6 @@ const Index = () => {
         <ArchitecturalVisualizationSection />
         <ProcessSection />
         <TestimonialsSection />
-        <BlogSection />
       </main>
       <Footer />
     </div>

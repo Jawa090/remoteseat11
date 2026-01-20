@@ -42,10 +42,10 @@ const HeroSection = () => {
   return (
     <section className="relative overflow-hidden bg-[#171717]">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="relative py-8 lg:py-12 lg:pb-0">
+        <div className="relative lg:py-2 lg:pb-0">
           <div className="grid lg:grid-cols-2 gap-8 items-end min-h-[400px] lg:min-h-[480px]">
             {/* Left side - Text content */}
-            <div className="relative z-10 lg:pr-12 pb-8 lg:pb-12">
+            <div className="relative z-10 lg:pr-12 lg:pb-12">
               <div className="w-full text-center lg:text-left">
                 <h1
                   className="font-semibold tracking-[-2px] text-white"
@@ -75,12 +75,12 @@ const HeroSection = () => {
 
                 <div className="mt-10 flex justify-center lg:justify-start">
                   <Link
-                    to="/contact-us"
+                    to="/contact-us/"
                     className="relative inline-flex items-center justify-center rounded-full bg-[#f2572b] px-[30px] py-[16px] text-white hover:bg-[#e04a1f] transition-colors overflow-hidden shadow-lg"
                     style={{ fontFamily: "Poppins, system-ui, sans-serif", fontSize: "14px", fontWeight: 500 }}
                   >
                     <div className="absolute inset-0 rounded-full bg-gradient-to-b from-white/50 via-white/20 to-transparent" style={{ height: '60%' }}></div>
-                    <div className="absolute inset-0 rounded-full" style={{ 
+                    <div className="absolute inset-0 rounded-full" style={{
                       background: 'linear-gradient(180deg, rgba(255,255,255,0.4) 0%, rgba(255,255,255,0.1) 40%, transparent 60%)',
                       boxShadow: 'inset 0 1px 2px rgba(255,255,255,0.5)'
                     }}></div>

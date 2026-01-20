@@ -13,39 +13,40 @@ const Footer = () => {
           {/* Brand & Description */}
           <div className="lg:col-span-1">
             <Link to="/" className="flex items-center mb-6">
-              <img 
+              <img
                 src="/logo.png"
-                alt="remoteseat" 
+                alt="remoteseat"
                 className="h-16 w-auto lg:h-20"
               />
             </Link>
             <p className="text-gray-300 mb-6 leading-relaxed">
               We're a leading pre-construction service provider, offering high-quality, accurate services and dedicated remote resources to the AEC industry.
             </p>
-            
+
             {/* Social Links */}
             <div className="flex gap-4">
-              <a 
-                href="https://www.facebook.com/ezybuilds.aec" 
-                target="_blank" 
-                rel="noopener noreferrer" 
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 bg-[#171717] rounded-full flex items-center justify-center hover:bg-[#f2572b] transition-colors"
               >
                 <Facebook className="w-5 h-5" />
               </a>
-              <a 
-                href="https://www.instagram.com/ezy.builds/" 
-                target="_blank" 
-                rel="noopener noreferrer" 
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 bg-[#171717] rounded-full flex items-center justify-center hover:bg-[#f2572b] transition-colors"
               >
                 <Instagram className="w-5 h-5" />
               </a>
-              <a 
-                href="https://www.linkedin.com/company/ezybuilds/" 
-                target="_blank" 
-                rel="noopener noreferrer" 
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 bg-[#171717] rounded-full flex items-center justify-center hover:bg-[#f2572b] transition-colors"
+                aria-label="Linkedin"
               >
                 <Linkedin className="w-5 h-5" />
               </a>
@@ -56,8 +57,8 @@ const Footer = () => {
           <div>
             <h4 className="text-xl font-semibold mb-6 text-white">Contact Details</h4>
             <div className="space-y-4">
-              <a 
-                href="tel:+15108617074" 
+              <a
+                href="tel:+15108617074"
                 className="flex items-center gap-3 text-gray-300 hover:text-[#f2572b] transition-colors"
               >
                 <Phone className="w-5 h-5 text-orange-500" />
@@ -67,12 +68,12 @@ const Footer = () => {
                 <MapPin className="w-5 h-5 text-orange-500 mt-1" />
                 <span>2603 Camino Ramon, San Ramon, CA 94583</span>
               </div>
-              <a 
-                href="mailto:info@ezybuilds.com" 
+              <a
+                href="mailto:sales@ezybuilds.com"
                 className="flex items-center gap-3 text-gray-300 hover:text-[#f2572b] transition-colors"
               >
                 <Mail className="w-5 h-5 text-orange-500" />
-                <span>info@ezybuilds.com</span>
+                <span>sales@ezybuilds.com</span>
               </a>
             </div>
           </div>
@@ -87,39 +88,24 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/outsource-architecture-construction-staffing" className="text-gray-300 hover:text-orange-400 transition-colors">
+                <Link to="/outsource-architecture-construction-staffing/" className="text-gray-300 hover:text-orange-400 transition-colors">
                   Extend Your AEC Team
                 </Link>
               </li>
               <li>
-                <Link to="/outsource-3d-architectural-rendering-bim-cad" className="text-gray-300 hover:text-orange-400 transition-colors">
+                <Link to="/outsource-3d-architectural-rendering-bim-cad/" className="text-gray-300 hover:text-orange-400 transition-colors">
                   Get Your Projects Done
                 </Link>
               </li>
               <li>
-                <Link to="/contact-us" className="text-gray-300 hover:text-orange-400 transition-colors">
+                <Link to="/contact-us/" className="text-gray-300 hover:text-orange-400 transition-colors">
                   Contact Us
                 </Link>
               </li>
             </ul>
           </div>
 
-          {/* Resources */}
-          <div>
-            <h4 className="text-xl font-semibold mb-6 text-white">Resources</h4>
-            <ul className="space-y-3">
-              <li>
-                <a href="/privacy-policy" className="text-gray-300 hover:text-orange-400 transition-colors">
-                  Privacy Policy
-                </a>
-              </li>
-              <li>
-                <a href="/cookie-policy" className="text-gray-300 hover:text-orange-400 transition-colors">
-                  Cookie Policy
-                </a>
-              </li>
-            </ul>
-          </div>
+
         </div>
 
         {/* Bottom Bar */}
@@ -128,12 +114,10 @@ const Footer = () => {
             <p className="text-gray-400 text-sm">
               © 2026 remoteseat. All rights reserved.
             </p>
-            
+
             <div className="flex items-center gap-6">
-              <a href="/privacy-policy" className="text-gray-400 hover:text-orange-400 transition-colors text-sm">
-                Privacy Policy
-              </a>
-              
+
+
               {/* Scroll to Top Button */}
               <button
                 onClick={scrollToTop}
