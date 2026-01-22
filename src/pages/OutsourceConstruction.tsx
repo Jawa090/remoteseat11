@@ -122,11 +122,11 @@ const OutsourceConstruction = () => {
 
             {/* Right Content - Calendar Widget */}
             <div className="hidden lg:block">
-              <div className="bg-white rounded-2xl overflow-hidden shadow-2xl border-2 border-[#f2572b]/20 min-w-[320px] h-[500px]">
+              <div className="rounded-2xl overflow-hidden shadow-2xl border-2 border-[#f2572b]/20 min-w-[320px] h-[480px]">
                 <img
                   src="/27.png"
                   width="100%"
-                  height="100"
+                  height="100%"
                   className="rounded-[12px] border-0"
                 />
               </div>
