@@ -19,17 +19,17 @@ const ProjectsDone = () => {
   const visualizationServices = [
     {
       title: "3D Interior Rendering",
-      image: "/3.png",
+      image: "/22.png",
       description: "Transform spaces with lifelike interior visuals for client approvals."
     },
     {
       title: "3D Furniture Rendering",
-      image: "/4.png",
+      image: "/23.png",
       description: "Showcase designs with detailed, manufacturable 3D furniture models."
     },
     {
       title: "3D Exterior Rendering",
-      image: "/5.png",
+      image: "/24.png",
       description: "Present building exteriors with realistic lighting, textures, and environments."
     }
   ];
@@ -184,7 +184,7 @@ const ProjectsDone = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <img
-                src="/assets/cheerful-african-american-architect-holding-bluepr-2024-11-17-17-04-27-utc-1-1.webp"
+                src="/assets/man.png"
                 alt="AEC Professional"
                 className="w-full h-auto rounded-lg shadow-xl"
               />

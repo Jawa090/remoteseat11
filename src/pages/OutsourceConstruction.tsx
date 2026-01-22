@@ -123,11 +123,10 @@ const OutsourceConstruction = () => {
             {/* Right Content - Calendar Widget */}
             <div className="hidden lg:block">
               <div className="bg-white rounded-2xl overflow-hidden shadow-2xl border-2 border-[#f2572b]/20 min-w-[320px] h-[500px]">
-                <iframe
-                  src="https://calendly.com/ezy-teams/ezybuilds-project-discussion-meeting-clone?embed_domain=ezybuilds.com&embed_type=Inline&hide_event_type_details=1&hide_gdpr_banner=1"
+                <img
+                  src="/27.png"
                   width="100%"
-                  height="100%"
-                  title="Select a Date & Time - Calendly"
+                  height="100"
                   className="rounded-[12px] border-0"
                 />
               </div>
@@ -232,16 +231,15 @@ const OutsourceConstruction = () => {
         ></div>
         <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
           <h2
-            className="text-3xl lg:text-4xl font-bold mb-12 text-center"
+            className="text-3xl lg:text-4xl font-bold text-center"
             style={{ fontFamily: "trap, Poppins, system-ui, sans-serif", color: "#171717" }}
           >
             Get what you need. <span className="text-[#f2572b]">Only when you need it.</span>
           </h2>
 
-          {/* Large Building Image */}
-          <div className="mb-12">
+          <div className="mb-10 mt-8">
             <img
-              src="https://ezybuilds.com/wp-content/uploads/2025/03/building-1.webp"
+              src='/25.png'
               alt="Modern building rendering"
               className="w-full h-auto rounded-2xl shadow-xl"
             />

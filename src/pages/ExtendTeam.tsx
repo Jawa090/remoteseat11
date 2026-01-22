@@ -104,7 +104,7 @@ const ExpandingCardsComponent = () => {
     {
       id: 0,
       title: 'Experienced<br/>Architects',
-      image: 'https://ezybuilds.com/wp-content/uploads/2025/03/cheerful-african-american-architect-holding-bluepr-2024-11-17-17-04-27-utc-2.webp',
+      image: '/17.png',
       // offshore: '$13/hour',
       // local: '$70/hour',
       // savings: '~$115,000'
@@ -112,7 +112,7 @@ const ExpandingCardsComponent = () => {
     {
       id: 1,
       title: 'Experienced<br/>Cost Estimators',
-      image: 'https://ezybuilds.com/wp-content/uploads/2025/03/weds.webp',
+      image: '/18.png',
       // offshore: '$13/hour',
       // local: '$40/hour',
       // savings: '~$57,000'
@@ -120,7 +120,7 @@ const ExpandingCardsComponent = () => {
     {
       id: 2,
       title: 'Experienced<br/>Project Managers',
-      image: 'https://ezybuilds.com/wp-content/uploads/2025/03/experience-arhitect.webp',
+      image: '/19.png',
       // offshore: '$15/hour',
       // local: '$40/hour',
       // savings: '~$74,000'
@@ -128,7 +128,7 @@ const ExpandingCardsComponent = () => {
     {
       id: 3,
       title: 'Experienced<br/>Civil Engineers',
-      image: 'https://ezybuilds.com/wp-content/uploads/2025/03/civil-engr-768x432.webp',
+      image: '/20.png',
       // offshore: '$13/hour',
       // local: '$36/hour',
       // savings: '~$63,000'
@@ -251,7 +251,7 @@ const ExtendTeam = () => {
 
             {/* Right Content - Image (Hidden on Mobile) */}
             <div className="hidden lg:block">
-              <div className="bg-white rounded-2xl overflow-hidden shadow-2xl border-2 border-[#f2572b]/20 min-w-[320px] h-[500px]">
+              <div className="overflow-hidden min-w-[320px] h-[500px]">
                 <img
                   src="/16.png"
                   alt="Construction Team"
@@ -1111,9 +1111,9 @@ const ExtendTeam = () => {
             {/* Left Content - 3D House Image */}
             <div className="flex justify-center lg:justify-start">
               <img
-                src="https://ezybuilds.com/wp-content/uploads/2025/03/3d-rendering-isometric-house-model-1.webp"
+                src="/21.png"
                 alt="3D Architectural Model"
-                className="w-full max-w-md h-auto"
+                className="w-full max-w-md h-auto rounded-2xl"
               />
             </div>
 
