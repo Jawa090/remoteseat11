@@ -4,7 +4,7 @@ const OffshoreHero = () => {
   return (
     <section className="relative w-full overflow-hidden bg-[#171717] pt-16 md:pt-20">
       {/* Blueprint overlay */}
-      <div className="pointer-events-none absolute inset-0 z-0 bg-[url('/assets/cta-blueprint.webp')] bg-no-repeat bg-[position:92%_center] bg-cover opacity-75 mix-blend-screen filter brightness-125 contrast-110" aria-hidden="true" />
+      <div className="pointer-events-none absolute inset-0 z-0 bg-[#5f5f5f] bg-no-repeat bg-[position:92%_center] bg-cover opacity-75 mix-blend-screen filter brightness-125 contrast-110" aria-hidden="true" />
       {/* Top/Bottom bands to mimic reference framing */}
       <div className="pointer-events-none absolute inset-x-0 top-0 h-8 md:h-10 bg-[#171717] -z-10" />
 

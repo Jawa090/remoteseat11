@@ -14,6 +14,7 @@ import ConstructionEstimator from "./pages/ConstructionEstimator";
 import CADDrafter from "./pages/CADDrafter";
 import OutsourceConstruction from "./pages/OutsourceConstruction";
 import NotFound from "./pages/NotFound";
+import AboutUs from "./pages/AboutUs";
 
 const queryClient = new QueryClient();
 
@@ -32,6 +33,7 @@ const App = () => (
           <Route path="/hire-offshore-cad-drafters/" element={<CADDrafter />} />
           <Route path="/outsource-construction-services/" element={<OutsourceConstruction />} />
           <Route path="/contact-us/" element={<Contact />} />
+          <Route path="/about-us" element={<AboutUs/>}/>
           <Route path="/blogs/" element={<Blogs />} />
           <Route path="/blogs/:slug/" element={<BlogPost />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}

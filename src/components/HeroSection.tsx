@@ -10,7 +10,7 @@ const HeroSection = () => {
       line3: "",
       description:
         "Get pre-approved remote construction cost estimators, BIM estimating services, and construction estimating outsourcing solutions. Save money, grow quickly, and easily develop a remote staff.",
-      image: "/1.png",
+      image: "/2.png",
     },
     {
       line1: "Hire Top Offshore BIM",
@@ -18,7 +18,7 @@ const HeroSection = () => {
       line3: "Modelers",
       description:
         "For accurate 3D modeling, project support, and on-site delivery, get in touch with qualified remote BIM experts. Increase bid wins, simplify processes, and easily engage in high-value clients.",
-      image: "/3.png",
+      image: "/1.png",
     },
     {
       line1: "Hire Top 1% of Offshore",
@@ -26,7 +26,7 @@ const HeroSection = () => {
       line3: "Structural Engineers",
       description:
         "Scale your AEC projects effortlessly with pre-vetted remote estimators, BIM specialists, and dedicated support teams. Our offshore staffing solutions deliver US-standard experts in construction cost estimating, BIM services, and outsourcing—saving up to 70% on costs while ensuring bid-winning accuracy.",
-      image: "/2.png",
+      image: "/3.png",
     },
   ];
 
