@@ -1078,7 +1078,7 @@ const ExtendTeam = () => {
             <div className="flex flex-col items-center">
               <div className="mb-8">
                 <img
-                  src="https://ezybuilds.com/wp-content/uploads/2025/03/4bg.webp"
+                  src="/28.png"
                   alt="Build Your Offshore AEC Team"
                   className="w-full max-w-lg h-auto rounded-lg"
                 />
